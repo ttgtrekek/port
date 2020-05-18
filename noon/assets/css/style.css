@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/*레이아웃*/
+/*header*/
+.header h1 {
+  color: #fff;
+}
+
+.header .side-nav {
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

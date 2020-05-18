@@ -1,0 +1,179 @@
+/*레이아웃*/
+#wrap { width: 100%; height: 4943px; margin: 0 auto;}
+#header{ width: 100%; height: 45px;background:#f4f4f4;}
+#nav { width: 100%; height: 80px;background: #333;;}
+#banner { width: 100%; height: 500px;}
+/*header*/
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        width: 130px;
+        height: 40px;
+        position: relative;
+        padding:10px 40px 10px 40px; 
+        &:before {
+            content:'';
+            width: 180px; height: 5px; background: #ca0202;
+            position: absolute; right:10px; top: 30px;
+            margin-top: 10px;
+            
+            
+        }
+        &:hover{display: block;}
+        
+        
+        a {
+            text-align: center;
+            text-transform: uppercase;
+            color: #333;
+        }      
+        &:hover a { 
+            li {
+                color: #000;
+            }
+        } 
+        li  {
+            color: #999;
+            }
+    }
+    
+}
+#nav { 
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        width: 140px; margin: 18px 0 0 20px;
+        svg {
+            fill : #fff;
+            transition: all 0.2s;
+            &:hover{
+                fill : #000;
+            }
+        }
+    }
+    .nav2 {
+        li {
+            display: inline;
+            a {
+                font-size: 16px; color: #fff;
+                font-weight: 500;
+                padding: 26px 20px;
+                display: inline-block;
+            }
+        }
+        li.live { 
+            a {
+                padding: 4px 20px 6px 20px;
+                display: inline-block;
+                border: 1px solid #fff;
+                border-radius: 20px;
+            } 
+        }
+    }
+    .side-nav {
+        margin-right: 40px;
+        li {
+            display: inline;
+            a {
+                width: 25px;
+                display: inline-block;
+                padding: 28px 10px 20px 20px;
+                
+            }
+        }
+    } 
+}
+#banner{background-image: url(../img/main_visual_way.png);
+    .banner{    
+        .babox1{
+            display: flex; justify-content: space-between;
+            
+            .babox1:nth-child(1) {flex-basis: 100px; }
+            .babox1:nth-child(2) {flex-basis: 100px;}
+            .sabox1{
+                align-items: center;
+                padding-left: 70px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: inline-block;
+                .mbox1{  
+                        img{
+                            width: 40px;height: 40px; fill: #fff;
+                        }
+                    span{
+                        display: inline-block;
+                        padding: 10px ; color: #fff;
+                    }
+                }
+            }
+        } 
+        .babox2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            &:before{
+                content:'';
+                width: 90%; height: 5px; background: rgba(255,255,255,0.5);
+                position: absolute; left: 100; top: 350px;
+                margin-top: 10px;
+
+            }
+
+            &:after{
+                content:'';
+                width: 5px; height: 300px; background: rgba(255,255,255,0.5);
+                position: absolute; right: 95px; top: 55px;
+                margin-top: 10px;
+
+            }
+            ul{
+                
+                &:before{
+                    content:'';
+                    width: 75%; height: 5px; background: rgba(255,255,255,0.5);
+                    position: absolute; left: 190px; top: 170px;
+                    margin-top: 10px;
+    
+                }
+                &:after{
+                    content:'';
+                    width: 5px; height: 155px; background: rgba(255,255,255,0.5);
+                    position: absolute; right: 1710px; top: 170px;
+                    margin-top: 10px;
+    
+                }
+                span{
+                    &:before{
+                        content:'';
+                        width: 30px; height: 30px; background: #96c11f;
+                        position: absolute; left: 940px; top: 155px;
+                        border-radius: 50%;
+                        margin-top: 10px;
+        
+                    }
+                    font-size: 50px;
+                    color: #fff;
+                    padding-left: 120px;
+                    display: block;
+                    padding-top: 50px;
+                    padding-bottom: 100px;  
+                }
+                li{
+                    display: block;
+                    font-size: 30px;
+                    color: #fff;
+                }
+                p{
+                    display: block;
+                    font-size: 30px;
+                    color: #fff;
+                    padding-left: 100px; 
+                }
+            }
+        }
+    }
+}

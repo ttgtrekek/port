@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAIA,AACI,OADG,CACH,EAAE,AAAA,CAAC,KAAK,CAAC,IAAI,CAAG,AADpB,AAGI,OAHG,CAGH,SAAS,AAAA,CAAC,KAAK,CAAC,OAAO,CAAG",
     "sources": [
-        "../../noon/assets/css/style.scss"
+        "style.scss"
     ],
     "names": [],
     "file": "style.min.css"
