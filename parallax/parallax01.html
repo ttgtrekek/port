@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax01</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;0,900;1,300&display=swap" rel="stylesheet">
+
+    <style>
+        * {margin: 0; top: 0;}
+        li {list-style: none;}
+        a {text-decoration: none; color: #fff; font-family: 'Lato', sans-serif;}
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+        }
+        #wrap h1 {
+            font-size: 135px;
+            padding: 60px;
+            color: #dc6e25;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        #wrap h1 em {
+            display: block;
+            font-weight: 100;
+            padding-left: 330px;
+        }
+        .contents {
+            /* width: 1920px; */
+            margin: 300px auto 400px;
+        }
+        .contents-item {
+            width: 1000px;
+            margin: 200px 0 300px;
+            position: relative;
+            
+        }
+        .contents-item:nth-child(even){
+            margin-left: auto;
+        }
+        .contents-item-num {
+            font-size: 350px;
+            font-weight: 100;
+            position: absolute;
+            right:-100px;top:-200px;
+            opacity: 0.04;
+            
+        }
+        .contents-item:nth-child(even) .contents-item-num{
+            right: auto;
+            left: -100px;
+        }
+        .contents-item-title {
+            text-align: right;
+            font-size: 24px;
+            font-weight: 300;
+            color: #999;
+            padding-bottom: 10px;
+            text-transform:capitalize;
+        }
+        .contents-item:nth-child(even) .contents-item-title {
+            text-align: left;
+        }
+        .contents-item-imgWrap {
+            position: relative;
+            padding-bottom: 57%;
+            overflow: hidden;
+        }   
+        .contents-item-img {
+            height: 550px;
+            position: absolute;top:0;
+            width: 100%;
+            background-size: cover;
+            background-position:50% 0;
+        }
+        .contents-item-desc {
+            font-size: 80px;
+            line-height: 1.2;
+            font-weight: 600;
+            text-align: right;
+            word-break: keep-all;
+        }
+        .contents-item:nth-child(even)  .contents-item-desc {
+            text-align: left;
+        }
+
+        #section1 .contents-item-img {background-image: url(img/Untitled-1.png);}
+        #section2 .contents-item-img {background-image: url(img/Untitled-2.png);}
+        #section3 .contents-item-img {background-image: url(img/Untitled-3.png);}
+        #section4 .contents-item-img {background-image: url(img/Untitled-4.png);}
+        #section5 .contents-item-img {background-image: url(img/Untitled-5.png);}
+        #section6 .contents-item-img {background-image: url(img/Untitled-6.png);}
+        #section7 .contents-item-img {background-image: url(img/Untitled-7.png);}
+        #section8 .contents-item-img {background-image: url(img/Untitled-8.png);}
+        #section9 .contents-item-img {background-image: url(img/Untitled-9.png);}
+        
+    </style>
+</head>
+<body>
+    <section id="wrap">
+        <h1>Parallax <em>Scrolling</em></h1>
+        <div class="contents">
+            <section id="section1" class="contents-item">
+                <span class="contents-item-num">01</span>
+                <h2 class="contents-item-title">Basic Coding</h2>
+                <figure class="contents-item-imgWrap">
+                    <div class="contents-item-img"></div>
+                </figure>
+                <p class="contents-item-desc">높은 목표를 세우고, 스스로 채직질 한다.</p>
+            </section>
+            <section id="section2" class="contents-item">
+                <span class="contents-item-num">02</span>
+                <h2 class="contents-item-title">Basic Coding</h2>
+                <figure class="contents-item-imgWrap">
+                    <div class="contents-item-img"></div>
+                </figure>
+                <p class="contents-item-desc">높은 목표를 세우고, 스스로 채직질 한다.</p>
+            </section>
+            <section id="section3" class="contents-item">
+                <span class="contents-item-num">03</span>
+                <h2 class="contents-item-title">Basic Coding</h2>
+                <figure class="contents-item-imgWrap">
+                    <div class="contents-item-img"></div>
+                </figure>
+                <p class="contents-item-desc">높은 목표를 세우고, 스스로 채직질 한다.</p>
+            </section>
+            <section id="section4" class="contents-item">
+                <span class="contents-item-num">04</span>
+                <h2 class="contents-item-title">Basic Coding</h2>
+                <figure class="contents-item-imgWrap">
+                    <div class="contents-item-img"></div>
+                </figure>
+                <p class="contents-item-desc">높은 목표를 세우고, 스스로 채직질 한다.</p>
+            </section>
+            <section id="section5" class="contents-item">
+                <span class="contents-item-num">05</span>
+                <h2 class="contents-item-title">Basic Coding</h2>
+                <figure class="contents-item-imgWrap">
+                    <div class="contents-item-img"></div>
+                </figure>
+                <p class="contents-item-desc">높은 목표를 세우고, 스스로 채직질 한다.</p>
+            </section>
+            <section id="section6" class="contents-item">
+                <span class="contents-item-num">06</span>
+                <h2 class="contents-item-title">Basic Coding</h2>
+                <figure class="contents-item-imgWrap">
+                    <div class="contents-item-img"></div>
+                </figure>
+                <p class="contents-item-desc">높은 목표를 세우고, 스스로 채직질 한다.</p>
+            </section>
+            <section id="section7" class="contents-item">
+                <span class="contents-item-num">07</span>
+                <h2 class="contents-item-title">Basic Coding</h2>
+                <figure class="contents-item-imgWrap">
+                    <div class="contents-item-img"></div>
+                </figure>
+                <p class="contents-item-desc">높은 목표를 세우고, 스스로 채직질 한다.</p>
+            </section>
+            <section id="section8" class="contents-item">
+                <span class="contents-item-num">08</span>
+                <h2 class="contents-item-title">Basic Coding</h2>
+                <figure class="contents-item-imgWrap">
+                    <div class="contents-item-img"></div>
+                </figure>
+                <p class="contents-item-desc">높은 목표를 세우고, 스스로 채직질 한다.</p>
+            </section>
+            <section id="section9" class="contents-item">
+                <span class="contents-item-num">09</span>
+                <h2 class="contents-item-title">Basic Coding</h2>
+                <figure class="contents-item-imgWrap">
+                    <div class="contents-item-img"></div>
+                </figure>
+                <p class="contents-item-desc">높은 목표를 세우고, 스스로 채직질 한다.</p>
+            </section>
+        </div>
+    </section>
+</body>
+</html>

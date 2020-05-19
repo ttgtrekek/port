@@ -16,8 +16,11 @@
 }
 
 #wrap {
+  font-family: 'Noto Sans KR', sans-serif;
   width: 100%;
   height: 3000px;
+  background-image: url(../img/3sforu_visual.jpg);
+  background-repeat: no-repeat;
 }
 
 #wrap #header ul {
@@ -58,6 +61,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #333;
+  font-weight: 600;
 }
 
 #wrap #header ul div:hover a li {
@@ -75,7 +79,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #000;
+  background: #FFF;
 }
 
 #wrap #nav h1 {
@@ -84,7 +88,7 @@
 }
 
 #wrap #nav h1 svg {
-  fill: #fff;
+  fill: #000;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -95,14 +99,29 @@
 
 #wrap #nav .nav2 li {
   display: inline;
+  position: relative;
 }
 
 #wrap #nav .nav2 li a {
   font-size: 16px;
-  color: #fff;
+  color: #000;
   font-weight: 500;
   padding: 26px 20px;
   display: inline-block;
+  font-weight: 600;
+}
+
+#wrap #nav .nav2 li a span::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  height: 0;
+  width: 100%;
+  border-top: 2px solid #d83832;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 #wrap #nav .nav2 li.live a {
@@ -110,6 +129,7 @@
   display: inline-block;
   border: 1px solid #fff;
   border-radius: 20px;
+  font-weight: 600;
 }
 
 #wrap #nav .side-nav {
@@ -126,10 +146,6 @@
   padding: 28px 10px 20px 20px;
 }
 
-#wrap #banner {
-  background-image: url(../img/main_visual_way.png);
-}
-
 #wrap #banner .banner .babox1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,6 +153,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 #wrap #banner .banner .babox1 .babox1:nth-child(1) {
@@ -167,6 +184,8 @@
 
 #wrap #banner .banner .babox1 .sabox1 .mbox1 span {
   display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
   padding: 10px;
   color: #fff;
 }
@@ -186,73 +205,75 @@
 
 #wrap #banner .banner .babox2:before {
   content: '';
-  width: 90%;
-  height: 5px;
+  width: 33%;
+  height: 1px;
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
-  left: 100;
-  top: 350px;
+  left: 10;
+  top: 310px;
   margin-top: 10px;
 }
 
 #wrap #banner .banner .babox2:after {
   content: '';
-  width: 5px;
-  height: 300px;
+  width: 1px;
+  height: 230px;
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
-  right: 95px;
-  top: 55px;
+  right: 33.5%;
+  top: 35%;
   margin-top: 10px;
 }
 
 #wrap #banner .banner .babox2 ul:before {
   content: '';
-  width: 75%;
-  height: 5px;
+  width: 30%;
+  height: 1px;
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
-  left: 190px;
-  top: 170px;
+  left: 35.3%;
+  top: 60%;
   margin-top: 10px;
 }
 
 #wrap #banner .banner .babox2 ul:after {
   content: '';
-  width: 5px;
-  height: 155px;
+  width: 1px;
+  height: 50%;
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
-  right: 90%;
-  top: 170px;
+  right: 64.7%;
+  top: 60%;
   margin-top: 10px;
 }
 
 #wrap #banner .banner .babox2 ul span {
-  font-size: 50px;
+  font-size: 64px;
   color: #fff;
-  padding-left: 120px;
+  padding-left: 100px;
   display: block;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 20px;
+  padding-bottom: 90px;
+  font-weight: 500;
 }
 
 #wrap #banner .banner .babox2 ul span:before {
   content: '';
-  width: 30px;
-  height: 30px;
+  width: 13px;
+  height: 13px;
   background: #96c11f;
   position: absolute;
-  left: 940px;
-  top: 155px;
+  left: 50%;
+  top: 57%;
   border-radius: 50%;
   margin-top: 10px;
 }
 
 #wrap #banner .banner .babox2 ul li {
   display: block;
-  font-size: 30px;
+  font-size: 24px;
   color: #fff;
+  font-weight: 400;
 }
 
 #wrap #banner .banner .babox2 ul p {
@@ -264,7 +285,7 @@
 
 #wrap #bonbox1 {
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   position: relative;
   margin-bottom: 100px;
@@ -274,6 +295,8 @@
   padding-top: 100px;
   font-size: 32px;
   color: #212529;
+  font-weight: 700;
+  padding-left: 9%;
 }
 
 #wrap #bonbox1::after {
@@ -281,18 +304,19 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #539a00;
+  background-color: #96c11f;
   position: absolute;
   top: 60px;
-  left: 0px;
+  left: 9%;
 }
 
 #wrap #bonbox1 .tex {
   position: absolute;
-  width: 40%;
-  top: 250px;
-  -webkit-box-shadow: 4px 4px 21px rgba(0, 0, 0, 0.8);
-          box-shadow: 4px 4px 21px rgba(0, 0, 0, 0.8);
+  width: 30%;
+  top: 34%;
+  left: 5%;
+  -webkit-box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.3);
   padding: 40px 50px;
   background-color: #fff;
 }
@@ -301,6 +325,7 @@
   font-size: 28px;
   color: #539a00;
   position: relative;
+  font-weight: 700;
 }
 
 #wrap #bonbox1 .tex::after {
@@ -310,12 +335,15 @@
   background-color: #539a00;
   position: absolute;
   top: 60px;
-  left: 570px;
+  left: 90%;
 }
 
 #wrap #bonbox1 .tex p {
+  padding-top: 15px;
   font-size: 20px;
   color: #212529;
+  padding-left: 0%;
+  font-weight: 400;
 }
 
 #wrap #bonbox1 .bg {
@@ -323,14 +351,16 @@
 }
 
 #wrap #bonbox1 .bg img {
-  width: 65%;
+  width: 55%;
   float: right;
+  margin-right: 10%;
+  margin-top: 3%;
 }
 
 #wrap #bonbox2 .tex2 {
   margin: 0 auto;
   padding: 70px 30px;
-  width: 80%;
+  width: 70%;
   position: relative;
 }
 
@@ -341,7 +371,7 @@
 
 #wrap #bonbox2 .tex2::after {
   content: '';
-  width: 100%;
+  width: 94%;
   height: 3px;
   background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
@@ -356,7 +386,7 @@
   background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
   bottom: 0px;
-  right: 0px;
+  right: 6%;
 }
 
 #wrap #bonbox3 {
@@ -368,6 +398,11 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+#wrap #bonbox3 div {
+  margin-left: 250px;
 }
 
 #wrap #bonbox3 div ul {
@@ -376,7 +411,7 @@
 
 #wrap #bonbox3 div ul::after {
   content: '';
-  width: 220%;
+  width: 133%;
   height: 4px;
   background-color: black;
   position: absolute;
@@ -387,8 +422,20 @@
 #wrap #bonbox3 div ul li {
   color: #212529;
   font-size: 16px;
-  padding: 26px 20px;
   position: relative;
+  width: 500px;
+}
+
+#wrap #bonbox3 div ul li .box3pa {
+  padding-left: 4%;
+  font-weight: 700;
+  margin-right: 40px;
+}
+
+#wrap #bonbox3 div ul li span {
+  padding-left: 4%;
+  font-weight: 700;
+  padding: 26px 20px;
 }
 
 #wrap #bonbox3 div ul li p {
@@ -400,7 +447,7 @@
 
 #wrap #bonbox3 div ul li::after {
   content: '';
-  width: 220%;
+  width: 133%;
   height: 1px;
   background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
@@ -413,6 +460,7 @@
   padding-bottom: 12px;
   color: #6c757d;
   text-align: left;
+  font-size: 16px;
 }
 
 #wrap #bonbox4 {
@@ -443,6 +491,7 @@
   background-color: #97c222;
   position: absolute;
   top: -10px;
+  width: 100px;
 }
 
 #footer {
