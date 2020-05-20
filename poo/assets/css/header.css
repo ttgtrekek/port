@@ -1,0 +1,50 @@
+#wrap {
+  width: 100%;
+  height: 969px;
+  background: #000;
+}
+
+#wrap #header {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #header .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #header .swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #header .swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #header .swiper-container .swiper-wrapper .swiper-slide .bg1 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/main_img1.jpg);
+}
+
+#wrap #header .swiper-container .swiper-wrapper .swiper-slide .bg2 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/main_pf1.jpg);
+}
+
+#wrap #header .swiper-container .swiper-wrapper .swiper-slide .bg3 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/main_pf2.jpg);
+}
+
+#wrap #header .swiper-container .swiper-wrapper .swiper-slide .bg4 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/main_pf3.jpg);
+}
+/*# sourceMappingURL=header.css.map */
