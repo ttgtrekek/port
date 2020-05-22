@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="이지훈">
+    <meta name="author" content="김재민">
     <meta name="description" content="웹 퍼블리셔를 위한 정보 공유 사이트입니다.">
-    <meta name="keywords" content="이지훈, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, webstoryboy, publisher, css3, html, markup, design, Webstoryboy, 김재민, 화련무곡">
-    <title>이지훈 | Svg Animation</title>
+    <meta name="keywords" content="김재민, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, webstoryboy, publisher, css3, html, markup, design, Webstoryboy, 김재민, 화련무곡">
+    <title>김재민 | jQuery Animation</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../assets/css/bootstrap.css" rel="stylesheet">
@@ -26,16 +26,16 @@
 
     <!-- Facebook meta tags -->
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="이지훈" />
+    <meta property="og:title" content="김재민" />
     <meta property="og:url" content="https://webstoryboy.co.kr/" />
     <meta property="og:image" content="http://richclub8.dothome.co.kr/assets/ico/icon.png" />
-    <meta property="og:site_name" content="이지훈" />
+    <meta property="og:site_name" content="김재민" />
     <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
 
     <!-- twitter meta tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@webstoryboy" />
-    <meta name="twitter:title" content="이지훈" />
+    <meta name="twitter:title" content="김재민" />
     <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
     <meta property="twitter:image" content="http://richclub8.dothome.co.kr/assets/ico/icon.png" />
 
@@ -82,7 +82,7 @@
     <div class="bs-header bgs3" id="content">
         <div class="container">
             <h1>Background Reference v1.0 &lt;/doc&gt;</h1>
-            <p><a href="http://ttgtrekek.dothome.co.kr" target="_blank">ttgtrekek.dothome.co.kr</a></p>
+            <p><a href="http://miki5237.dothome.co.kr" target="_blank">miki5237.dothome.co.kr</a></p>
         </div>
     </div>
 
@@ -90,9 +90,9 @@
         <div class="row">
 
             <div class="col-md-9" role="main">
-                <!-- Intro0 -->
+                <!-- Intro1 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro0" class="page-header">svg</h2>
+                    <h2 id="intro1" class="page-header">jQuery-Animation</h2>
                     <div class="table-responsive">
                         <table class="table table-bordered table-striped table-hover">
                             <thead>
@@ -179,75 +179,182 @@
                         </table>
                     </div>
                 </div>
-                <!-- //Intro0 -->
-                 <!-- Intro1 -->
-                 <div class="bs-docs-section">
-                    <h2 id="intro1" class="page-header">svg</h2>
+                <!-- //Intro1 -->
+
+                <!-- Intro2 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro2" class="page-header">Animation</h2>
                     <p class="bs-callout bs-callout-info">
                         $("selector").animate(properties);<br>
                         $("selector").animate(properties, duration);<br>
-                        $("selector").animate(properties, duration,easing);<br>
-                        $("selector").animate(properties, duration,easing,collback);
+                        $("selector").animate(properties, duration, easing);<br>
+                        $("selector").animate(properties, duration, easing, collback);
                     </p>
                     <p>
-                        properties:boeder,margin,padding,width,height,
-                        font-size,bottom,left,top,right,line-height<br>
+                        properties : border, margin, padding, width, height,<br>
+                        font-size, bottom, left, top, right, line-height<br>
                         transform(x)
                     </p>
                     <p>
-                        //폰트 사이즈를 현재 크기에서 20px로 2초동안 애니메이션
-                        $("선택자").animate({"font-size":"20px"},2000);
-                        $("선택자").animate({"font-size:"20px},2000); 
-                        //선택한 요소를 왼쪽,오른쪽 마진값을 100px을 600밀리세컨드 동안 애니메이션
-                        $("선택자").animate({marginLeft:100, marginRgiht:100},600);
-                        $("선택자").animate({marginLeft:100, marginRgiht:100},"slow"); 
+                        //폰트 사이즈를 현재 크기에서 20px로 2초동안 애니메이션<br>
+                        $("선택자").animate({"font-size":"20px"},2000);<br>
+                        $("선택자").animate({font-size:"20px"},2000);<br>
+                        //선택한 요소를 왼쪽, 오른쪽 마진값을 100px을 600밀리세컨트 동안 애니메이션<br>
+                        $("선택자").animate({marginLeft:100, marginRgiht:100},600)<br>
+                        $("선택자").animate({marginLeft:100, marginRgiht:100},"slow")
                     </p>
                 </div>
-                <!-- //Intro1 -->
+                <!-- //Intro2 -->
+
                 <style>
-                    .box{height: 300px;position: relative;}
-                    .circle{
+                    .box {height: 400px; position: relative;}
+                    .circle {
                         position: absolute;
-                        width: 50px;height: 50px;background: green;
+                        width: 50px; height: 50px; background: green;
                         border-radius: 50%;
                     }
                 </style>
-                <!-- Intro2 -->
-                <div class="bs-docs-section">
-                    <h2 id="intro2" class="page-header">svg</h2>
-                    <h4>animaton <span class="btn btn1">start</span></h4>
-                   <div class="well">
-                       <div class="box">
-                            <div class="circle circle1"></div>
-                       </div>
-                   </div>
-                </div>
-                <!-- //Intro2 -->
+
                 <!-- Intro3 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro3" class="page-header">svg</h2>
-                    <h4 class="btn2">animaton 
-                        <button>easeInOutQuad</button>
-                        <button>linear</button>
-                        <button>swing</button>
-                        <button>_default</button>
-                        <button>easeOutSine</button>
-                        <button>easeInSine</button>
+                    <h2 id="intro3" class="page-header">Animation</h2>
+                    <h4>animate 
+                        <samp class="btn btn1">Star</samp>
                     </h4>
-                   <div class="well">
-                       <div class="box">
-                            <div class="circle circle2"></div>
-                       </div>
-                   </div>
+                    <div class="well">
+                        <div class="box">
+                            <div class="circle circle1">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- //Intro3 -->
 
+                <!-- Intro4 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro4" class="page-header">timing-function</h2>
+                    <h4 class="btn2">animate 
+                        <button>easeOutQuad</button>
+                        <button>easeOutQuart</button>
+                        <button>easeOutSine</button>
+                        <button>easeInOutExpo</button>
+                        <button>easeInOutQuint</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box">
+                            <div class="circle circle2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro4 -->
 
+                <!-- Intro5 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro5" class="page-header">delay</h2>
+                    <h4 class="btn5">animate 
+                        <button>start</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box circle5">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro5 -->
 
+                <!-- Intro6 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro6" class="page-header">width</h2>
+                    <h4 class="btn6">animate 
+                        <button>start</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box circle6">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro6 -->
 
+                <!-- Intro7 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro7" class="page-header">cilck</h2>
+                    <h4 class="btn7">animate 
+                        <button class="btn7-1">right</button>
+                        <button class="btn7-2">left</button>
+                        <button class="btn7-3">top</button>
+                        <button class="btn7-4">bottom</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box circle7">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro7 -->
 
+                <!-- Intro8 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro8" class="page-header">무한 반복</h2>
+                    <h4 class="btn8">animate 
+                        <button class="btn8">start</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box circle8">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro8 -->
 
+                <!-- Intro9 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro9" class="page-header">일정한 간격으로 움직임</h2>
+                    <h4 class="btn9">animate 
+                        <button class="btn9">start</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box circle9">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro9 -->
 
+                <!-- Intro10 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro10" class="page-header">사라지는 애니매이션</h2>
+                    <h4 class="btn10">animate 
+                        <button class="btn10">start</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box circle10">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro10 -->
+                <!-- Intro11 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro11" class="page-header">사라지는 애니매이션</h2>
+                    <h4 class="btn11">animate 
+                        <button class="btn11">start</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box circle11">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro10 -->
        
             </div>
             <!-- //col-md-9 -->
@@ -257,8 +364,8 @@
             <div class="col-md-3">
                 <div class="bs-sidebar hidden-print" role="complementary">
                     <ul class="nav bs-sidenav">
-                        <li><a href="#intro1">rect</a></li>
-                        <li><a href="#intro2">circle</a></li>
+                        <li><a href="#intro1">background</a></li>
+                        <li><a href="#intro2">Gradient1</a></li>
                         <li><a href="#intro3">Gradient2</a></li>
                         <li><a href="#intro4">Gradient3</a></li>
                         <li><a href="#intro5">Gradient4</a></li>
@@ -299,33 +406,130 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="../../assets/js/jquery-1.9.1.min.js"></script>
+    <script src="../../assets/js/jquery-ui.min.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
     <script src="../../assets/js/docs.min.js"></script>
     <script src="../../assets/js/prism.js"></script>
     <script>
-        //버튼을 클릭하면 원의 백그라운드 색을 빨간색으로 변경
+        let boxWidth = $(".box").width();
+        let circleWidth = $(".circle").width();
+        let leftWidth = boxWidth - circleWidth;
+
+        let boxHeight = $(".box").height();
+        let circleHeight = $(".circle").height();
+        let leftHeight = boxHeight - circleHeight;
+        //버튼을 클릭하면 윈의 백그라운드 색을 빨간색으로 변경
         $(".btn1").click(function(){
-           $(".circle1").css("background","red");
+            $(".circle1")
+            .animate({left: leftWidth},1000)
+            .animate({top: leftHeight},1000)
+            .animate({left:"0"},1000)
+            .animate({top:"0"},1000)
         });
-        $(".btn1").click(function(){
-           $(".circle1")
-           .animate({left:"calc (100% - 80px)",top:"0"},1000)
-           .animate({left:"calc (100% - 80px)",top:"calc(100% - 80px)"},1000)
-           .animate({left:"calc (100% - 80px)",top:"calc(100% - 80px)"},1000)
-           .animate({left:"0",top:"calc (100% - 80px)"},1000);
+
+        //두번째 버튼을 클릭했을 때 클릭한 글씨를 출력해주세요~
+        $(".btn2 > button").click(function(){
+            let easing = $(this).text();
+            $(".circle2")
+            .animate({left: leftWidth},1000, easing)
+            .animate({top: leftHeight},1000, easing)
+            .animate({left: "0"},1000, easing)
+            .animate({top: "0"},1000, easing)
+        });
+
+        //원의 position값을 relarive로 변경해주세요~
+        $(".circle5 > div").css({"position":"relative","margin-bottom":"30px"});
+
+        let ease ="easeOutElastic";
+
+        $(".btn5").click(function(){
+            $(".circle5 > div").eq(0).delay(100).animate({left: leftWidth},1000,ease).animate({left:"0"},1000);
+            $(".circle5 > div").eq(1).delay(200).animate({left: leftWidth},1000,ease).animate({left:"0"},1000);
+            $(".circle5 > div").eq(2).delay(300).animate({left: leftWidth},1000,ease).animate({left:"0"},1000);
+            $(".circle5 > div").eq(3).delay(400).animate({left: leftWidth},1000,ease).animate({left:"0"},1000);
+        });
+
+        //ciecle6의 하이트 값을 초기화해주세요~
+        $(".circle6").css("height","200px")
+        $(".circle6 > div").css({"position":"relative","margin-bottom":"30px"});
+        //버튼을 클릭했을 때 ciecle6을 오르쪽 이동시켜주세요
+        $(".btn6").click(function(){
+            $(".circle6 > div:eq(0)")
+            .animate({left: leftWidth, width:"150px", height:"300px"},1000)
+            .animate({left:"0" , width:"50px", height:"50px"},1000);
+
+            $(".circle6 > div:eq(1)")
+            .animate({left: leftWidth},1000,"easeOutElastic")
+            .slideUp()
+            .slideDown()
+            .animate({left: "0"},1000,"easeOutElastic")
+
+            $(".circle6 > div:eq(2)")
+            .animate({left: "50%", borderRadius:"0%"},1000,"easeOutElastic")
+            .animate({height:300,opacity:0.5},"slow","easeOutQuint")
+            .animate({width:300,opacity:1,borderRadius:"30%"},"normal","easeOutQuint")
+            .animate({width:50,height:50,borderRadius:"50%"},1000,"easeOutQuint")
+            .animate({left:0},1000,"easeOutQuint")
         });
     </script>
     <script>
-        $(".btn2 > button").click(function(){
-            let text = $(this).text();
-            // alert(easing);
-            $(".circle2")
-            .animate({left:"100%"},1000)
-            .animate({top:"100%"},1000)
-            .animate({left:"0%"},1000)
-            .animate({top:"0%"},1000);
+        $(".btn7-1").click(function(){
+            $(".circle7 > div").animate({left:"+=100"},"slow","easeOutQuint");
+        });
+        $(".btn7-2").click(function(){
+            $(".circle7 > div").animate({left:"-=100"},"slow","easeOutQuint");
+        });
+        $(".btn7-3").click(function(){
+            $(".circle7 > div").animate({top:"-=100"},"slow","easeOutQuint");
+        });
+        $(".btn7-4").click(function(){
+            $(".circle7 > div").animate({top:"+=100"},"slow","easeOutQuint");
         });
     </script>
+     <script>
+        $(".btn8").click(function(){
+            loop();
+        });
+        function loop(){
+            $(".circle8 > div")
+                .animate({left:leftWidth},1000,"easeOutQuint")
+                .animate({left:0},1000,"easeOutQuint",loop);
+        }
+    </script>
+     <script>
+        $(".btn9").click(function(){
+            setInterval(time, 5000)
+        });
+        function time(){
+            $(".circle9 > div")
+                .animate({left:leftWidth},1000,"easeOutQuint")
+                .animate({left:0},1000,"easeOutQuint");
+        }
+    </script>
+     <script>
+        $(".btn10").click(function(){
+        $(".circle10 > div") 
+            .animate({left:leftWidth},1000,"easeOutQuint")
+            .animate({left:0},1000,"easeOutQuint");
+            setTimeout(out,2000);
+        });
+        function out(){
+            $(".circle11 > div").hide();
+                
+        }
+        //속성 애니메이션 -> 무한움직이기 ->  10분뒤 사라지게
+        $(".btn11").click(function(){
+            function loop(){
+                $(".circle11 > div")
+                    .animate({left:leftWidth},1000,"easeOutQuint")
+                    .animate({left:0},1000,"easeOutQuint",loop);
+            }
+            loop()
+            setTimeout(out,2000);
+        });
+                
+    </script>
+    
 </body>
 
 </html>

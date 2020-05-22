@@ -3,92 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>parallax01</title>
+    <title>parallax02</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;0,900;1,300&display=swap" rel="stylesheet">
 
     <style>
-        * {margin: 0; top: 0; box-sizing: border-box;}
+         * {margin: 0; top: 0; box-sizing: border-box;}
         li {list-style: none;}
         a {text-decoration: none; color: #fff; font-family: 'Lato', sans-serif;}
-        body {
-            background-color: #111;
-            color: #fff;
-            font-family: 'Lato', sans-serif;
+        :root{
+            font-size: 16px;
         }
-        #wrap h1 {
-            font-size: 135px;
-            padding: 60px;
-            color: #dc6e25;
+        body{
+            --color-h1:#dc6e25;
+            --color-title: #fff;
+            --color-sub:#999;
+            --color-link:#000;
+            --color-bg:#111;
+            --font-family:'lato',sans-serif;
+            --aspct-ratio:32/12;
+            --image-width-max:500px;
+            background-color: var(--color-bg);
+            font-family: var(--font-family);
+            color: var(--color-title);
+
+        }
+        #wrap h1{
+            /* font-size:vw vh vmin vmax em rem; */
+            font-size: 6vw;
+            color:var(--color-h1);
+            padding: 3vw;
             text-transform: uppercase;
             font-weight: 700;
+
         }
-        #wrap h1 em {
+        #wrap h1 em{
             display: block;
             font-weight: 100;
-            padding-left: 330px;
+            padding-left: 18vw;
         }
         .contents {
-            /* width: 1920px; */
-            margin: 300px auto 400px;
+            margin: 35vh auto 35vh;
         }
         .contents-item {
-            width: 1000px;
-            margin: 200px 0 300px;
             position: relative;
+            --image-width:calc(var( --image-width-max)* var( --aspct-ratio));
+            width: var(--image-width);
+            margin: 20vh 0 40vh;
+            position: relative;
+            max-width:90vw;
             
         }
-        .contents-item:nth-child(even){
+        .contents-item:nth-child(even) {
             margin-left: auto;
-        }
+        } 
         .contents-item-num {
-            font-size: 350px;
+            font-size: 20vw;
             font-weight: 100;
             position: absolute;
-            right:-100px;top:-200px;
+            right:-5px;top:-15px;
             opacity: 0.04;
             
         }
-        .contents-item:nth-child(even) .contents-item-num{
-            right: auto;
-            left: -100px;
+        .contents-item:nth-child(even) .contents-item-num {
+           right: auto;left: -10vw;
         }
-        .contents-item-title {
+        .contents-item-title{
             text-align: right;
-            font-size: 24px;
             font-weight: 300;
-            color: #999;
-            padding-bottom: 10px;
-            text-transform:capitalize;
+            text-transform: capitalize;
+            color:var(--color-sub);
+            padding-bottom: 0.8vw;
+            font-size: 1.5rem;
+
         }
-        .contents-item:nth-child(even) .contents-item-title {
+        .contents-item:nth-child(even) .contents-item-title{
             text-align: left;
         }
+
         .contents-item-imgWrap {
             position: relative;
-            padding-bottom: 57%;
+            --width:100%;
+            width:var(--width);
+            padding-bottom: calc(var(--width) / (var(--aspct-ratio)));
             overflow: hidden;
-        }   
+        }  
         .contents-item-img {
-            height: 550px;
-            position: absolute;top:0;
+            --width:100%;
+            width:var(--width);
+            --overflow:40px;
+            height: calc(100% + (2*var(--overflow)));
+            position: absolute;top:calc(-1*var(--overflow));
             width: 100%;
             background-size: cover;
             background-position:50% 0;
         }
-        .contents-item-desc {
-            font-size: 80px;
+        .contents-item-desc{
+            font-size: 4vw;
             line-height: 1.2;
             font-weight: 600;
+            text-transform: uppercase;
+            color: var(--color-title);
             text-align: right;
-            margin-top: -100px;
             word-break: keep-all;
+            margin-top: -6vw;
             position: relative;
-            z-index: 100;
+            z-index: 20;
         }
-        .contents-item:nth-child(even)  .contents-item-desc {
+        .contents-item:nth-child(even) .contents-item-desc{
             text-align: left;
-        }
+        } 
+        
 
         #section1 .contents-item-img {background-image: url(img/Untitled-1.png);}
         #section2 .contents-item-img {background-image: url(img/Untitled-2.png);}

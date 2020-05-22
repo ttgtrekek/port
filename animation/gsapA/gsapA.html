@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="webstoryboy">
+    <meta name="author" content="김재민">
     <meta name="description" content="웹 퍼블리셔를 위한 정보 공유 사이트입니다.">
-    <meta name="keywords" content="웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, publisher, css3, html, markup, design">
-    <title>Hwang Ayoung | transform</title>
+    <meta name="keywords" content="김재민, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, webstoryboy, publisher, css3, html, markup, design, Webstoryboy, 김재민, 화련무곡">
+    <title>이지훈 | jQuery Animation</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../assets/css/bootstrap.css" rel="stylesheet">
@@ -15,8 +15,8 @@
     <link href="../../assets/css/prism.css" rel="stylesheet">
 
     <!-- 파비콘 -->
-    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon_114.png">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="../../assets/ico/favicon_114.png">
     <link rel="icon" href="../../assets/ico/icon.png">
     <link rel="icon" href="../../assets/ico/favicon_57.png" sizes="16x16">
     <link rel="icon" href="../../assets/ico/favicon_72.png" sizes="32x32">
@@ -26,16 +26,16 @@
 
     <!-- Facebook meta tags -->
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:title" content="김재민" />
     <meta property="og:url" content="https://webstoryboy.co.kr/" />
     <meta property="og:image" content="http://richclub8.dothome.co.kr/assets/ico/icon.png" />
-    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:site_name" content="김재민" />
     <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
 
     <!-- twitter meta tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@webstoryboy" />
-    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:title" content="김재민" />
     <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
     <meta property="twitter:image" content="http://richclub8.dothome.co.kr/assets/ico/icon.png" />
 
@@ -48,9 +48,9 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.../assets2/js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.../../assets2/js/1.4.2/respond.min.js"></script>
+   <![endif]-->
 </head>
 
 <body>
@@ -65,7 +65,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="../index.html" class="navbar-brand">WEB'S &lt;/doc&gt;</a>
+                <a href="../../index.html" class="navbar-brand">WEB'S &lt;/doc&gt;</a>
             </div>
             <nav class="collapse navbar-collapse bs-navbar-collapse pull-right" role="navigation">
                 <ul class="nav navbar-nav">
@@ -81,8 +81,8 @@
 
     <div class="bs-header bgs3" id="content">
         <div class="container">
-            <h1>transform Reference v1.0 &lt;/doc&gt;</h1>
-            <p><a href="http://ay9318.dothome.co.kr/" target="_blank">ay9318.dothome.co.kr</a></p>
+            <h1>Background Reference v1.0 &lt;/doc&gt;</h1>
+            <p><a href="http://miki5237.dothome.co.kr" target="_blank">miki5237.dothome.co.kr</a></p>
         </div>
     </div>
 
@@ -90,175 +90,293 @@
         <div class="row">
 
             <div class="col-md-9" role="main">
+                <!-- Intro0 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro0" class="page-header">gsap</h2>
+                    <p>웹 브라우저에서 애니메이션을 구현하기 위한 자바스크립 라이브러리입니다. 
+                       기존 CSS,jQuery Animation보다 탁월한 퍼포먼스를 발휘할 수 있도록
+                        최적화된 애니메이션 전용 라이브러리입니다.   
+                    </p>
+                </div>
+                <!-- //Intro0 -->
+                <style>
+                    .circle {
+                        width: 60px;height: 60px;border-radius: 50%;
+                        text-align: center;line-height: 60px;
+                        font-size: 12px; color: #fff;
+                        background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+                        margin-bottom: 10px;
+                        position: relative;
+                    }
+                    
+                </style>
                 <!-- Intro1 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro1" class="page-header">Animation</h2>
-
-                    <h3 class="pt30">Animation</h3>
-                    <p class="bs-callout bs-callout-info">
-                        animation : name | duration | timing-fuction | delay | iteration | direction | fill-mode | play-state
-                    </p>
-                    <div class="table-reponsive">
-                        <table class="table table-bordered table-striped table-hover">
-                            <thead>
-                                <tr>
-                                    <th>종류</th>
-                                    <th>예시</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>animation-name</td>
-                                    <td>@keyframe에 지정된 이름을 설정합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>animation-duration</td>
-                                    <td>애니메이션이 실행되는 시간을 설정합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>animation-timing-function</td>
-                                    <td>애니메이션 키프레임 움직임을 설정합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>animation-delay</td>
-                                    <td>애니메이션이 시작되기 전까지 시간을 설정합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>animation-iteration</td>
-                                    <td>애니메이션 반복 횟수를 설정합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>animation-derection</td>
-                                    <td>애니메이션 방향을 설정합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>animation-fill-mode</td>
-                                    <td>애니메이션 끝나고 난 뒤 어떤 값을 적용할지 설정합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>animation-play-state</td>
-                                    <td>애니메이션 실행 상태를 설정합니다.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <h3 class="pt30">Transition</h3>
-                    <p class="bs-callout bs-callout-info">
-                        transition : property | duration | timing-fuction | delay
-                    </p>
-                    <div class="table-reponsive">
-                        <table class="table table-bordered table-striped table-hover">
-                            <thead>
-                                <tr>
-                                    <th>종류</th>
-                                    <th>예시</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>transition-property</td>
-                                    <td>트렌지션을 적용할 CSS 속성 대상을 설정합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>transition-druation</td>
-                                    <td>트렌지션 작동시간을 설정합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>transition-timing-function</td>
-                                    <td>트렌지션 움직임 효과를 설정합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>transition-delay</td>
-                                    <td>트렌지션이 시작되기 전까지 시간을 설정합니다.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <h3 class="pt30">Timing-fuction</h3>
-                    <div class="table-reponsive">
-                        <table class="table table-bordered table-striped table-hover">
-                            <thead>
-                                <tr>
-                                    <th>종류</th>
-                                    <th>예시</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>linear</td>
-                                    <td>일정한 간격으로 설정합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>ease</td>
-                                    <td>처음에는 서서히 가속하고 마지막 부분에서 급격히 감속합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>ease-in</td>
-                                    <td>처음에는 천천히 시작하고 마지막에 가속합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>ease-out</td>
-                                    <td>처음에는 최대 속도로 시작하고 마지막에 감속합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>ease-in-out</td>
-                                    <td>처음에는 제로 속도로 시작하고, 중간 지점에서 최고 속도로 움직이고, 마지막 부분에서 서서히 감속합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>step-start</td>
-                                    <td>애니메이션을 시작점에서 설정합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>step-end</td>
-                                    <td>애니메이션을 끝점에서 설정합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>steps(int, start/end)</td>
-                                    <td>애니메이션을 단계별을 설정합니다.</td>
-                                </tr>
-                                <tr>
-                                    <td>cubic-bezier(n,n,n,n)</td>
-                                    <td>버지니아 곡선 값을 만들어서 설정합니다.</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <h2 id="intro1" class="page-header">이동하기</h2>
+                    <h4 class="btn1">animate 
+                        <button class="btn btn1">Start</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box1">
+                            <div class="circle circle1">box</div>
+                            <div class="circle circle2">box</div>
+                            <div class="circle circle3">box</div>
+                            <div class="circle circle4">box</div>
+                            <div class="circle circle5">box</div>
+                            <div class="circle circle6">box</div>
+                            <div class="circle circle7">box</div>
+                            <div class="circle circle8">box</div>
+                            <div class="circle circle9">box</div>
+                            <div class="circle circle10">box</div>
+                        </div>
                     </div>
                 </div>
                 <!-- //Intro1 -->
+<pre class="line-numbers language-markup"><code>$(".btn1").click(function(){
+    // $(".box1> div").animate({left:"90%"},1000);
+    gsap.to(".box1 .circle1", 1, {left:"90%"})
+    gsap.to(".box1 .circle2", 1, {left:"90%",borderRadius:"0%"})
+    gsap.to(".box1 .circle3", 1, {left:"90%",rotationY:"300deg"});
+    gsap.to(".box1 .circle4", 1, {left:"90%",rotationX:"700deg"});
+    gsap.to(".box1 .circle5", 1, {left:"90%",backgroundImage: "linear-gradient(to top, #a8edea 0%, #fed6e3 100%)"});
+    gsap.to(".box1 .circle6", 1, {left:"90%",scale:"3",rotationY:"300deg"});
+    gsap.to(".box1 .circle7", 1, {left:"90%",scale:"3",rotation:"300deg"});
+    gsap.to(".box1 .circle8", 1, {left:"90%",scale:"0.5",rotation:"1300deg"});
+    gsap.to(".box1 .circle9", 1, {left:"90%",scale:"0",rotation:"300deg"});
+    gsap.to(".box1 .circle10", 1, {left:"90%",skew:"30deg"});
+});
+</code></pre>
 
                 <!-- Intro2 -->
                 <div class="bs-docs-section">
-                    <h2 id="intro19" class="page-header">Sample18</h2>
+                    <h2 id="intro2" class="page-header">이동하기(from)</h2>
+                    <h4 class="btn2">animate 
+                        <button class="btn btn2">Start</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box2">
+                            <div class="circle circle1">box</div>
+                            <div class="circle circle2">box</div>
+                            <div class="circle circle3">box</div>
+                            <div class="circle circle4">box</div>
+                            <div class="circle circle5">box</div>
+                            <div class="circle circle6">box</div>
+                            <div class="circle circle7">box</div>
+                            <div class="circle circle8">box</div>
+                            <div class="circle circle9">box</div>
+                            <div class="circle circle10">box</div>
+                        </div>
+                    </div>
                 </div>
                 <!-- //Intro2 -->
+<pre class="line-numbers language-markup"><code>$(".btn2").click(function(){
+    gsap.from(".box2 .circle1", 1, {left:"90%"})
+    gsap.from(".box2 .circle2", 1, {left:"90%",borderRadius:"0%"})
+    gsap.from(".box2 .circle3", 1, {left:"90%",rotationY:"300deg"});
+    gsap.from(".box2 .circle4", 1, {left:"90%",rotationX:"700deg"});
+    gsap.from(".box2 .circle5", 1, {left:"90%",backgroundImage: "linear-gradient(to top, #a8edea 0%, #fed6e3 100%)"});
+    gsap.from(".box2 .circle6", 1, {left:"90%",scale:"3",rotationY:"300deg"});
+    gsap.from(".box2 .circle7", 1, {left:"90%",scale:"3",rotation:"300deg"});
+    gsap.from(".box2 .circle8", 1, {left:"90%",scale:"0.5",rotation:"1300deg"});
+    gsap.from(".box2 .circle9", 1, {left:"90%",scale:"0",rotation:"300deg"});
+    gsap.from(".box2 .circle10", 1, {left:"90%",skew:"30deg"});
+});
+</code></pre>
+                <!-- Intro3 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro3" class="page-header">이동하기(easing)</h2>
+                    <h4 class="btn3">animate 
+                        <button class="btn btn3">Start</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box3">
+                            <div class="circle circle1">box</div>
+                            <div class="circle circle2">box</div>
+                            <div class="circle circle3">box</div>
+                            <div class="circle circle4">box</div>
+                            <div class="circle circle5">box</div>
+                            <div class="circle circle6">box</div>
+                            <div class="circle circle7">box</div>
+                            <div class="circle circle8">box</div>
+                            <div class="circle circle9">box</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro3 -->
+<pre class="line-numbers language-markup"><code>$(".btn3").click(function(){
+    gsap.to(".box3 .circle1",{duration:2, left:"90%",rotationY:"300deg",ease:"power1.out"});
+    gsap.to(".box3 .circle2",{duration:2, left:"90%",rotationY:"300deg",ease:"power2.out"});
+    gsap.to(".box3 .circle3",{duration:2, left:"90%",rotationY:"300deg",ease:"power3.out"});
+    gsap.to(".box3 .circle4",{duration:2, left:"90%",rotationY:"300deg",ease:"power4.out"});
+    gsap.to(".box3 .circle5",{duration:2, left:"90%",rotationY:"300deg",ease:"back.out(1.7)"});
+    gsap.to(".box3 .circle6",{duration:2, left:"90%",rotationY:"300deg",ease:"elastic.out(1,0.3)"});
+    gsap.to(".box3 .circle7",{duration:2, left:"90%",rotationY:"300deg",ease:"bounce.out"});
+    gsap.to(".box3 .circle8",{duration:2, left:"90%",rotationY:"300deg",ease:"slow(0.7,0.7,false)"});
+    gsap.to(".box3 .circle9",{duration:2, left:"90%",rotationY:"300deg",ease:"steps(12)"});
 
+});
+</code></pre>
+                 <!-- Intro4 -->
+                 <div class="bs-docs-section">
+                    <h2 id="intro4" class="page-header">반복하기</h2>
+                    <h4 class="btn4">animate 
+                        <button class="btn btn4">Start</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box4">
+                            <div class="circle circle1">box</div>
+                            <div class="circle circle2">box</div>
+                            <div class="circle circle3">box</div>
+                            <div class="circle circle4">box</div>
+                            <div class="circle circle5">box</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro4 -->
+<pre class="line-numbers language-markup"><code>$(".btn4").click(function(){
+    gsap.to(".box4 .circle1",{duration:1,repeat:1, left:"90%",rotation:"720deg",ease:"power4.out"});
+    gsap.to(".box4 .circle2",{duration:1,repeat:2,  left:"90%",rotation:"720deg",ease:"power4.out"});
+    gsap.to(".box4 .circle3",{duration:1,repeat:3,  left:"90%",rotation:"720deg",ease:"power4.out"});
+    gsap.to(".box4 .circle4",{duration:1,repeat:4,  left:"90%",rotation:"720deg",ease:"power4.out"});
+    gsap.to(".box4 .circle5",{duration:1,repeat:-1,yoyo:true,  left:"90%",rotation:"720deg",ease:"power4.out"});
+});
+</code></pre>
+
+                <!-- Intro5 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro5" class="page-header">Timeline</h2>
+                    <h4 class="btn5">animate 
+                        <button class="btn btn4">Start</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box5">
+                            <div class="circle circle1">box</div>
+                            <div class="circle circle2">box</div>
+                            <div class="circle circle3">box</div>
+                            <div class="circle circle4">box</div>
+                            <div class="circle circle5">box</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro5 -->
+<pre class="line-numbers language-markup"><code>$(".box5").css("height","400px")
+    $(".btn5").click(function(){
+        let tl =new TimelineMax();
+        
+            tl.to(".box5 .circle1",{duration:1,scale:"1",left:"90%",ease:"power4.out"})
+            .to(".box5 .circle2",{duration:1,scale:"2",top:"80%",ease:"power4.out"})
+            .to(".box5 .circle3",{duration:1,scale:"3",left:"0%",ease:"power4.out"})
+            .to(".box5 .circle4",{duration:1,scale:"4", top:"0%",ease:"power4.out"})
+            .to(".box5 .circle5",{duration:1,scale:"-1",left:"90%",ease:"power4.out"});
+    });
+</code></pre>
+
+                <!-- Intro6 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro6" class="page-header">Controlling</h2>
+                    <h4>animate 
+                        <button class="btn btn6-1">play</button>
+                        <button class="btn btn6-2">pause</button>
+                        <button class="btn btn6-3">resume</button>
+                        <button class="btn btn6-4">reverse</button>
+                        <button class="btn btn6-5">seek(0.5)</button>
+                        <button class="btn btn6-6">timeDcale(0.5)</button>
+                        <button class="btn btn6-7">timeScale(2)</button>
+                        <button class="btn btn6-8">kill</button>
+                        <button class="btn btn6-9">restart()</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box circle6">
+                            <div class="circle circle1"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro6-->
+
+                <!-- Intro6 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro6" class="page-header">Controlling</h2>
+                    <ul>
+                        <li>onComplete : 애니메이션이 완료되었을 때</li>
+                        <li>onStart : 애니메이션이 시작할 때</li>
+                        <li>onUpdate : 애니메이션이 업데이트 될 때 마다</li>
+                        <li>onRepeat : 애니메이션이 반복될 때</li>
+                        <li>onReverseComplere : 애니메이션이 리버스 되고 완료되었을 때</li>
+                    </ul>
+                    <h4>animate 
+                        <button class="btn btn7-1">jquery</button>
+                        <button class="btn btn7-2">p</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box circle6">
+                            <div class="circle circle1"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro6-->
+
+                <!-- Intro9 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro9" class="page-header">일정한 간격으로 움직임</h2>
+                    <h4 class="btn9">animate 
+                        <button class="btn9">start</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box circle9">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro9 -->
+
+                <!-- Intro10 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro10" class="page-header">사라지는 애니매이션</h2>
+                    <h4 class="btn10">animate 
+                        <button class="btn10">start</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box circle10">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro10 -->
+                <!-- Intro11 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro11" class="page-header">사라지는 애니매이션</h2>
+                    <h4 class="btn11">animate 
+                        <button class="btn11">start</button>
+                    </h4>
+                    <div class="well">
+                        <div class="box circle11">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Intro10 -->
+       
             </div>
             <!-- //col-md-9 -->
+
 
             <!-- //col-md-3 -->
             <div class="col-md-3">
                 <div class="bs-sidebar hidden-print" role="complementary">
                     <ul class="nav bs-sidenav">
-                        <li><a href="#intro1">Transform</a></li>
-                        <li><a href="#intro2">Sample01 - translate</a></li>               
-                        <li><a href="#intro3">Sample02 - translateX</a></li>
-                        <li><a href="#intro4">Sample03 - translateY</a></li>
-                        <li><a href="#intro5">Sample04 - translateZ</a></li>
-                        <li><a href="#intro6">Sample05 - scale 확대</a></li>
-                        <li><a href="#intro7">Sample06 - scale 축소</a></li>
-                        <li><a href="#intro8">Sample07 - scaleX</a></li>
-                        <li><a href="#intro9">Sample08 - scaleY</a></li>
-                        <li><a href="#intro10">Sample09 - rotate</a></li>
-                        <li><a href="#intro11">Sample10 - rotateY</a></li>
-                        <li><a href="#intro12">Sample11 - rotate3d</a></li>
-                        <li><a href="#intro13">Sample12 - skew</a></li>
-                        <li><a href="#intro14">Sample13 - skewX</a></li>
-                        <li><a href="#intro15">Sample14 - skewY</a></li>
-                        <li><a href="#intro16">Sample15 - transform-origin</a></li>
-                        <li><a href="#intro17">Sample16 - transform-origin</a></li>
-                        <li><a href="#intro18">Sample17 - transform-origin</a></li>
+                        <li><a href="#intro1">background</a></li>
+                        <li><a href="#intro2">Gradient1</a></li>
+                        <li><a href="#intro3">Gradient2</a></li>
+                        <li><a href="#intro4">Gradient3</a></li>
+                        <li><a href="#intro5">Gradient4</a></li>
+                        <li><a href="#intro6">Gradient5</a></li>
+                        <li><a href="#intro7">Gradient6</a></li>
+                        <li><a href="#intro8">Gradient7</a></li>
+                        <li><a href="#intro9">Gradient8</a></li>
+                        <li><a href="#intro10">Gradient9</a></li>
+                        <li><a href="#intro11">Gradient10</a></li>
+                        <li><a href="#intro12">Gradient11</a></li>
+                        <li><a href="#intro13">Gradient12</a></li>
                     </ul>
                 </div>
             </div>
@@ -288,9 +406,108 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="../../assets/js/jquery-1.9.1.min.js"></script>
+    <script src="../../assets/js/jquery-ui.min.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
     <script src="../../assets/js/docs.min.js"></script>
     <script src="../../assets/js/prism.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js -->
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js -->
+   <script>
+       //1
+       $(".btn1").click(function(){
+            // $(".box1> div").animate({left:"90%"},1000);
+            gsap.to(".box1 .circle1", 1, {left:"90%"})
+            gsap.to(".box1 .circle2", 1, {left:"90%",borderRadius:"0%"})
+            gsap.to(".box1 .circle3", 1, {left:"90%",rotationY:"300deg"});
+            gsap.to(".box1 .circle4", 1, {left:"90%",rotationX:"700deg"});
+            gsap.to(".box1 .circle5", 1, {left:"90%",backgroundImage: "linear-gradient(to top, #a8edea 0%, #fed6e3 100%)"});
+            gsap.to(".box1 .circle6", 1, {left:"90%",scale:"3",rotationY:"300deg"});
+            gsap.to(".box1 .circle7", 1, {left:"90%",scale:"3",rotation:"300deg"});
+            gsap.to(".box1 .circle8", 1, {left:"90%",scale:"0.5",rotation:"1300deg"});
+            gsap.to(".box1 .circle9", 1, {left:"90%",scale:"0",rotation:"300deg"});
+            gsap.to(".box1 .circle10", 1, {left:"90%",skew:"30deg"});
+       });
+       //2
+       $(".btn2").click(function(){
+            gsap.from(".box2 .circle1", 1, {left:"90%"})
+            gsap.from(".box2 .circle2", 1, {left:"90%",borderRadius:"0%"})
+            gsap.from(".box2 .circle3", 1, {left:"90%",rotationY:"300deg"});
+            gsap.from(".box2 .circle4", 1, {left:"90%",rotationX:"700deg"});
+            gsap.from(".box2 .circle5", 1, {left:"90%",backgroundImage: "linear-gradient(to top, #a8edea 0%, #fed6e3 100%)"});
+            gsap.from(".box2 .circle6", 1, {left:"90%",scale:"3",rotationY:"300deg"});
+            gsap.from(".box2 .circle7", 1, {left:"90%",scale:"3",rotation:"300deg"});
+            gsap.from(".box2 .circle8", 1, {left:"90%",scale:"0.5",rotation:"1300deg"});
+            gsap.from(".box2 .circle9", 1, {left:"90%",scale:"0",rotation:"300deg"});
+            gsap.from(".box2 .circle10", 1, {left:"90%",skew:"30deg"});
+       });
+       //3
+       $(".btn3").click(function(){
+            gsap.to(".box3 .circle1",{duration:2, left:"90%",rotationY:"300deg",ease:"power1.out"});
+            gsap.to(".box3 .circle2",{duration:2, left:"90%",rotationY:"300deg",ease:"power2.out"});
+            gsap.to(".box3 .circle3",{duration:2, left:"90%",rotationY:"300deg",ease:"power3.out"});
+            gsap.to(".box3 .circle4",{duration:2, left:"90%",rotationY:"300deg",ease:"power4.out"});
+            gsap.to(".box3 .circle5",{duration:2, left:"90%",rotationY:"300deg",ease:"back.out(1.7)"});
+            gsap.to(".box3 .circle6",{duration:2, left:"90%",rotationY:"300deg",ease:"elastic.out(1,0.3)"});
+            gsap.to(".box3 .circle7",{duration:2, left:"90%",rotationY:"300deg",ease:"bounce.out"});
+            gsap.to(".box3 .circle8",{duration:2, left:"90%",rotationY:"300deg",ease:"slow(0.7,0.7,false)"});
+            gsap.to(".box3 .circle9",{duration:2, left:"90%",rotationY:"300deg",ease:"steps(12)"});
+
+       });
+       //4
+       $(".btn4").click(function(){
+            gsap.to(".box4 .circle1",{duration:1,repeat:1, left:"90%",rotation:"720deg",ease:"power4.out"});
+            gsap.to(".box4 .circle2",{duration:1,repeat:2,  left:"90%",rotation:"720deg",ease:"power4.out"});
+            gsap.to(".box4 .circle3",{duration:1,repeat:3,  left:"90%",rotation:"720deg",ease:"power4.out"});
+            gsap.to(".box4 .circle4",{duration:1,repeat:4,  left:"90%",rotation:"720deg",ease:"power4.out"});
+            gsap.to(".box4 .circle5",{duration:1,repeat:-1,yoyo:true,  left:"90%",rotation:"720deg",ease:"power4.out"});
+       });
+       //5 숙제 타임라인 3번만 반복
+       $(".box5").css("height","400px")
+       $(".btn5").click(function(){
+           let tl =new TimelineMax();
+           
+            tl.to(".box5 .circle1",{duration:1,scale:"1",left:"90%",ease:"power4.out"})
+              .to(".box5 .circle2",{duration:1,scale:"2",top:"80%",ease:"power4.out"})
+              .to(".box5 .circle3",{duration:1,scale:"3",left:"0%",ease:"power4.out"})
+              .to(".box5 .circle4",{duration:1,scale:"4", top:"0%",ease:"power4.out"})
+              .to(".box5 .circle5",{duration:1,scale:"-1",left:"90%",ease:"power4.out"});
+       });
+       //6
+       const tw = gsap.to(".box6 .circle1", {duration: 1, left: "90%", borderRadius: "0%", rotation: "720deg" })
+        tw.pause();
+
+        $(".btn6").click(function(){
+            gsap.to(".box6 .circle1", {duration: 1, left: "90%", borderRadius: "0%", rotation: "720deg" })
+        });
+        $(".btn6-1").click(function(){ tw.play()});
+        $(".btn6-2").click(function(){ tw.pause()});
+        $(".btn6-3").click(function(){ tw.repeat()});
+        $(".btn6-4").click(function(){ tw.reverse()});
+        $(".btn6-5").click(function(){ tw.seek(0.5)});
+        $(".btn6-6").click(function(){ tw.timeScale(0.5)});
+        $(".btn6-7").click(function(){ tw.timeScale(2)});
+        $(".btn6-8").click(function(){ tw.kill()});
+        $(".btn6-9").click(function(){ tw.repeat()});
+
+       //7
+
+       $(".btn7-1").click(function(){
+            $(".btn7 .circle1").animate({ left: "90%"}, 1000, function(){
+                $(".btn7 .circle1").animate({ left: "0"}, 1000)
+            });
+        });
+
+        $(".btn7-2").click(function(){
+            gsap.to(".bpx7 .circle1",{duration:1, left: "90%", onComplete: com})
+        });
+
+        function com(){
+            gsap.to(".bpx7 .circle1",{duration:1, left: "0"})
+        }
+       </script>
+    
+
 </body>
 
 </html>

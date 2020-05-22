@@ -15,22 +15,222 @@
                     width: 100%;
                     height: 100%;
                     .bg1{
+                        position: relative;
+                        .side-nav1 {
+                            position: fixed; left: -300px; top: 0;
+                            width: 300px; height: 100vh;
+                            background: rgba(255,255,255,0.3);
+                            font-family: abel;
+                            transition: all 0.3s
+                             
+                          }
+                          .navBtn1 {
+                            position: absolute; right: -98vw; top: 10px;
+                            display: block; width: 50px; height: 50px;
+                            background: rgba(255,255,255,0.4);
+                            border-radius: 50%;
+                            text-align: center;
+                            line-height: 50px;
+                            text-decoration: none;
+                            color: #fff;
+                          }
+                          
+                            #logo{
+                                width: 100px;
+                                height: 100px;
+                                position: absolute;
+                                left:30px;
+                                top:-20px;
+                            }
+                            #pr
+                            {
+                                width: 70px;
+                                height: 70px;
+                                position: absolute;
+                                left:30px;
+                                top:600px;
+                            }
+                            #in
+                            {
+                                width: 70px;
+                                height: 70px;
+                                position: absolute;
+                                right:30px;
+                                top:550px;
+                            }
+                            #em
+                            {
+                                width: 70px;
+                                height: 70px;
+                                position: absolute;
+                                right:30px;
+                                top:630px;
+                            }
                         width: 100%;
                         height: 100%;
                         background: url(../img/main_img1.jpg);
                          
                     }
                     .bg2{
+                        position: relative;
+                        .side-nav2 {
+                            position: fixed; left: -300px; top: 0;
+                            width: 300px; height: 100vh;
+                            background: rgba(255,255,255,0.3);
+                            font-family: abel;
+                            transition: all 0.3s
+                             
+                          }
+                          .navBtn2 {
+                            position: absolute; right: -198vw;  top: 10px;
+                            display: block; width: 50px; height: 50px;
+                            background: rgba(255,255,255,0.4);
+                            border-radius: 50%;
+                            text-align: center;
+                            line-height: 50px;
+                            text-decoration: none;
+                            color: #fff;
+                          }
+                            #logo{
+                                width: 100px;
+                                height: 100px;
+                                position: absolute;
+                                left:30px;
+                                top:-20px;
+                            }
+                            #pr
+                            {
+                                width: 70px;
+                                height: 70px;
+                                position: absolute;
+                                left:30px;
+                                top:600px;
+                            }
+                            #in
+                            {
+                                width: 70px;
+                                height: 70px;
+                                position: absolute;
+                                right:30px;
+                                top:550px;
+                            }
+                            #em
+                            {
+                                width: 70px;
+                                height: 70px;
+                                position: absolute;
+                                right:30px;
+                                top:630px;
+                            }
                         width: 100%;
                         height: 100%; 
                         background: url(../img/main_pf1.jpg);
                     }
                     .bg3{
+                        position: relative;
+                        .side-nav3 {
+                            position: fixed; left: -300px; top: 0;
+                            width: 300px; height: 100vh;
+                            background: rgba(255,255,255,0.3);
+                            font-family: abel;
+                            transition: all 0.3s
+                             
+                          }
+                          .navBtn3 {
+                            position: absolute; right: -298vw; top: 10px;
+                            display: block; width: 50px; height: 50px;
+                            background: rgba(255,255,255,0.4);
+                            border-radius: 50%;
+                            text-align: center;
+                            line-height: 50px;
+                            text-decoration: none;
+                            color: #fff;
+                          }
+                            #logo{
+                                width: 100px;
+                                height: 100px;
+                                position: absolute;
+                                left:30px;
+                                top:-20px;
+                            }
+                            #pr
+                            {
+                                width: 70px;
+                                height: 70px;
+                                position: absolute;
+                                left:30px;
+                                top:600px;
+                            }
+                            #in
+                            {
+                                width: 70px;
+                                height: 70px;
+                                position: absolute;
+                                right:30px;
+                                top:550px;
+                            }
+                            #em
+                            {
+                                width: 70px;
+                                height: 70px;
+                                position: absolute;
+                                right:30px;
+                                top:630px;
+                            }
                         width: 100%;
                         height: 100%;   
                         background: url(../img/main_pf2.jpg);
                     }
                     .bg4{
+                        position: relative;
+                        .side-nav4 {
+                            position: fixed; left: -300px; top: 0;
+                            width: 300px; height: 100vh;
+                            background: rgba(255,255,255,0.3);
+                            font-family: abel;
+                            transition: all 0.3s
+                          }
+                          .navBtn4 {
+                            position: absolute; right: -398vw; top: 10px;
+                            display: block; width: 50px; height: 50px;
+                            background: rgba(255,255,255,0.4);
+                            border-radius: 50%;
+                            text-align: center;
+                            line-height: 50px;
+                            text-decoration: none;
+                            color: #fff;
+                          }
+                            #logo{
+                                width: 100px;
+                                height: 100px;
+                                position: absolute;
+                                left:30px;
+                                top:-20px;
+                            }
+                            #pr
+                            {
+                                width: 70px;
+                                height: 70px;
+                                position: absolute;
+                                left:30px;
+                                top:600px;
+                            }
+                            #in
+                            {
+                                width: 70px;
+                                height: 70px;
+                                position: absolute;
+                                right:30px;
+                                top:550px;
+                            }
+                            #em
+                            {
+                                width: 70px;
+                                height: 70px;
+                                position: absolute;
+                                right:30px;
+                                top:630px;
+                            }
                         width: 100%;
                         height: 100%;
                         background: url(../img/main_pf3.jpg);
