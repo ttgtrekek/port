@@ -16,15 +16,9 @@
                   <div class="swiper-slide">
                       <div class="bg1">
 						<div class="side-nav1">
-							<h1>webstoryboy</h1>
-							<ul>
-							  <li class="active"><a href="#section1">menu1</a></li>
-							  <li><a href="#section2">menu2</a></li>
-							  <li><a href="#section3">menu3</a></li>
-							  <li><a href="#section4">menu4</a></li>
-							  <li><a href="#section5">menu5</a></li>
-							  <li><a href="#section6">menu6</a></li>
-							</ul>
+							<div class="mbox1">
+								<div class="conbox1"></div>
+							</div>
 							<a href="#" class="navBtn1">Open</a>
 						  </div>
 								<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -108,15 +102,7 @@
                   <div class="swiper-slide">
                     <div class="bg2">
 						<div class="side-nav2">
-							<h1>webstoryboy</h1>
-							<ul>
-							  <li class="active"><a href="#section1">menu1</a></li>
-							  <li><a href="#section2">menu2</a></li>
-							  <li><a href="#section3">menu3</a></li>
-							  <li><a href="#section4">menu4</a></li>
-							  <li><a href="#section5">menu5</a></li>
-							  <li><a href="#section6">menu6</a></li>
-							</ul>
+							<div class="mbox1"></div>	
 							<a href="#" class="navBtn2">Open</a>
 						  </div>>
 						<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -395,11 +381,10 @@
               </div>
         </header>
     </div>
-     <!-- Swiper JS -->
-  <script src="assets/js/swiper.min.js"></script>
-  <script src="assets/css/script/jquery.min_1.12.4.js"></script>
-  <script src="assets/css/script/jquery.min_2.2.4.js"></script>
-  <script src="assets/css/script/jquery.min_3.4.1.js"></script>
+	 <!-- Swiper JS -->
+	 <script src="assets/js/jquery.min_1.12.4.js"></script>
+	 <script src="assets/js/jquery-ui.min.js"></script>
+  	 <script src="assets/js/swiper.min.js"></script>
 
 
 
@@ -415,13 +400,22 @@
   </script>
   <script>
 	  $(".navBtn1").click(function(){
-  $(".side-nav1").toggleClass("on");
-  if($(".side-nav1").hasClass("on")){
-    $(".side-nav1").animate({"left":"0"},300,"easeInOutExpo");
-    $(".navBtn1").text("Close");
-  }else{
-    $(".side-nav1").animate({"left":"-300"},300,"easeInOutExpo");
-    $(".navBtn1").text("Open");
+        $(".side-nav1").toggleClass("on");
+  		if($(".side-nav1").hasClass("on")){
+		$(".side-nav1").animate({"left":"0"},300,"easeInOutExpo");
+		$(".side-nav1").css('height','300vw');
+		$(".bg1").css('height','300vw');
+		$("#header").css('height','300vw');
+		$(".navBtn1").animate({"left":"96vw"},300,"easeInOutExpo");
+    	$(".navBtn1").text("Close");
+ 		 }else{
+		$(".side-nav1").animate({"left":"-99.5vw"},300,"easeInOutExpo");
+		$(".side-nav1").css("height", "100vh");
+		$(".side-nav1").css('height','100%');
+		$(".bg1").css('height','100%');
+		$("#header").css('height','100%');
+		$(".navBtn1").animate({"left":"194vw"},300,"easeInOutExpo");
+   		 $(".navBtn1").text("Open");
   }
 });
   </script>

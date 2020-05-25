@@ -17,11 +17,11 @@
                     .bg1{
                         position: relative;
                         .side-nav1 {
-                            position: fixed; left: -300px; top: 0;
-                            width: 300px; height: 100vh;
-                            background: rgba(255,255,255,0.3);
-                            font-family: abel;
-                            transition: all 0.3s
+                            position: fixed; left: -99.5vw; top: 0;
+                            width: 99.5vw; height: 100vh;
+                            background:#fff;
+                            transition: all 0.3s;
+                            z-index: 1;
                              
                           }
                           .navBtn1 {
@@ -32,7 +32,8 @@
                             text-align: center;
                             line-height: 50px;
                             text-decoration: none;
-                            color: #fff;
+                            color: #000;
+                            z-index: 10;
                           }
                           
                             #logo{
@@ -41,6 +42,7 @@
                                 position: absolute;
                                 left:30px;
                                 top:-20px;
+                                z-index: 10;
                             }
                             #pr
                             {
@@ -97,6 +99,7 @@
                                 position: absolute;
                                 left:30px;
                                 top:-20px;
+                                z-index: 10;
                             }
                             #pr
                             {
@@ -152,6 +155,7 @@
                                 position: absolute;
                                 left:30px;
                                 top:-20px;
+                                z-index: 10;
                             }
                             #pr
                             {
@@ -176,6 +180,7 @@
                                 position: absolute;
                                 right:30px;
                                 top:630px;
+                                
                             }
                         width: 100%;
                         height: 100%;   
@@ -206,6 +211,7 @@
                                 position: absolute;
                                 left:30px;
                                 top:-20px;
+                                z-index: 10;
                             }
                             #pr
                             {
