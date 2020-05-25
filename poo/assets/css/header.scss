@@ -22,6 +22,23 @@
                             background:#fff;
                             transition: all 0.3s;
                             z-index: 1;
+                            .mbox1{
+                                .conbox1{
+                                    background: rgba(255,255,200,0.1);
+                                    display: none;
+                                    .sc-box{
+                                        a{
+                                            sc-box{
+                                                img{
+
+                                                    width: 100%;
+                                                    height: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                              
                           }
                           .navBtn1 {
@@ -70,7 +87,7 @@
                             }
                         width: 100%;
                         height: 100%;
-                        background: url(../img/main_img1.jpg);
+                        background: url(../img/main_img1.jpg)center center;
                          
                     }
                     .bg2{
@@ -127,7 +144,7 @@
                             }
                         width: 100%;
                         height: 100%; 
-                        background: url(../img/main_pf1.jpg);
+                        background: url(../img/main_pf1.jpg)center center;
                     }
                     .bg3{
                         position: relative;
@@ -184,7 +201,7 @@
                             }
                         width: 100%;
                         height: 100%;   
-                        background: url(../img/main_pf2.jpg);
+                        background: url(../img/main_pf2.jpg)center center;
                     }
                     .bg4{
                         position: relative;
@@ -239,7 +256,7 @@
                             }
                         width: 100%;
                         height: 100%;
-                        background: url(../img/main_pf3.jpg);
+                        background: url(../img/main_pf3.jpg)center center;
                     }
                 }
             }
