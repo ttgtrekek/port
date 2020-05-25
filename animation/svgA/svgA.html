@@ -648,7 +648,108 @@
                                 c0.732,2.708,2.25,3.199,5.087,1.646c-1.697,3.784-2.089,4.999-1.317,4.07c-2.557,1.841-3.529,1.526-3.255-1.054"/>
                             </svg>  
                         </div>
-<pre class="line-numbers language-markup"><code>
+<pre class="line-numbers language-markup"><code>.aniRect1{
+    stroke:#880e4f;stroke-width: 18;
+    transform-origin: center center;
+    animation: rect1 4s infinite ease-in-out;
+}
+@keyframes rect1{
+    0%{stroke:#880e4f;stroke-width: 18; transform:rotate(0deg);}
+    35%{stroke:#311b92;stroke-width: 1;transform:rotate(3600deg);}
+    70%{stroke:#004d40;stroke-width: 1;transform:rotate(3600deg);}
+    100%{stroke:#880e4f;stroke-width: 18; transform:rotate(0deg);}
+}
+.aniRect2{
+    stroke:#880e4f;stroke-width: 4;
+    animation: rect2 4s infinite ease-in-out alternate;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    stroke-linecap: round;
+}
+@keyframes rect2{
+    0%{stroke:#880e4f; stroke-dashoffset: 50;}
+    35%{stroke:#311b92;}
+    70%{stroke:#004d40;}
+    100%{stroke:#880e4f; stroke-dashoffset: 0;}
+}
+.aniRect3{
+    stroke:#880e4f;stroke-width: 4;
+    animation: rect2 4s infinite ease-in-out alternate;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    stroke-linecap: round;
+}
+@keyframes rect3{
+    0%{stroke:#880e4f; stroke-dashoffset: 100;}
+    35%{stroke:#311b92;}
+    70%{stroke:#004d40;}
+    100%{stroke:#880e4f; stroke-dashoffset: 0;}
+}
+.aniRect4{
+    stroke:#880e4f;stroke-width: 4;
+    animation: rect2 4s infinite ease-in-out alternate;
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    stroke-linecap: round;
+}
+@keyframes rect4{
+    0%{stroke:#880e4f; stroke-dashoffset: 10;}
+    35%{stroke:#311b92;}
+    70%{stroke:#004d40;}
+    100%{stroke:#880e4f; stroke-dashoffset: 0;}
+}
+.aniPath1{
+    fill:none; 
+    stroke:#880e4f;
+        stroke-width: 2;
+        stroke-linecap: round;
+        animation: path1 2s infinite linear alternate-reverse;
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+}
+@keyframes path1{
+    0%{stroke-dashoffset: 2000;}
+    100%{stroke-dashoffset: 0;}
+}
+.aniPath2{
+    fill:none; 
+    stroke:#880e4f;
+        stroke-width: 2;
+        stroke-linecap: round;
+        animation: path1 2s infinite linear alternate-reverse;
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+}
+@keyframes path1{
+    0%{stroke-dashoffset: 2000;}
+    100%{stroke-dashoffset: 0;}
+}
+.aniPath3{
+    fill:none; 
+    stroke:#880e4f;
+        stroke-width: 2;
+        stroke-linecap: round;
+        animation: path1 2s infinite linear alternate-reverse;
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+}
+@keyframes path1{
+    0%{stroke-dashoffset: 2000;}
+    100%{stroke-dashoffset: 0;}
+}
+.aniPath4{
+    fill:none; 
+    stroke:#880e4f;
+        stroke-width: 2;
+        stroke-linecap: round;
+        animation: path1 2s infinite linear alternate-reverse;
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+}
+@keyframes path1{
+    0%{stroke-dashoffset: 2000;}
+    100%{stroke-dashoffset: 0;}
+}
 </code></pre>
                         </div>
                         <!-- //Intro6 -->
