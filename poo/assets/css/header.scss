@@ -1,317 +1,83 @@
 #wrap{
+    background-image: url(assets/img/B467A2-FAA5-4CE5-BF83-EC1C2E9EE473.large.jpg);
     width: 100%;
-    height: 969px;
-    background: #000;
-    #header{
-        width: 100%;
-        height: 100%;
-        .swiper-container{
+    height: 4096px;
+   .container{
+        width: 80%;
+        margin: 0 auto;
+        nav{
+            overflow: hidden;
+            background-color: #000;
             width: 100%;
-            height: 100%;
-            .swiper-wrapper{
-                width: 100%;
-                height: 100%;
-                .swiper-slide{
-                    width: 100%;
-                    height: 100%;
-                    .bg1{
-                        position: relative;
-                        .side-nav1 {
-                            position: fixed; left: -99.5vw; top: 0;
-                            width: 99.5vw; height: 100vh;
-                            background:#fff;
-                            transition: all 0.3s;
-                            z-index: 1;
-                            .mbox1{
-                                .conbox1{
-                                    background: rgba(255,255,200,0.1);
-                                    display: none;
-                                    .sc-box{
-                                        a{
-                                            sc-box{
-                                                img{
-
-                                                    width: 100%;
-                                                    height: 100%;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                             
-                          }
-                          .navBtn1 {
-                            position: absolute; right: -98vw; top: 10px;
-                            display: block; width: 50px; height: 50px;
-                            background: rgba(255,255,255,0.4);
-                            border-radius: 50%;
-                            text-align: center;
-                            line-height: 50px;
-                            text-decoration: none;
-                            color: #000;
-                            z-index: 10;
-                          }
-                          
-                            #logo{
-                                width: 100px;
-                                height: 100px;
-                                position: absolute;
-                                left:30px;
-                                top:-20px;
-                                z-index: 10;
-                            }
-                            #pr
-                            {
-                                width: 70px;
-                                height: 70px;
-                                position: absolute;
-                                left:30px;
-                                top:600px;
-                            }
-                            #in
-                            {
-                                width: 70px;
-                                height: 70px;
-                                position: absolute;
-                                right:30px;
-                                top:550px;
-                            }
-                            #em
-                            {
-                                width: 70px;
-                                height: 70px;
-                                position: absolute;
-                                right:30px;
-                                top:630px;
-                            }
-                        width: 100%;
-                        height: 100%;
-                        background: url(../img/main_img1.jpg)center center;
-                         
-                    }
-                    .bg2{
-                        position: relative;
-                        .side-nav2 {
-                            position: fixed; left: -99.5vw; top: 0;
-                            width: 99.5vw; height: 100vh;
-                            background:#fff;
-                            transition: all 0.3s;
-                            z-index: 1;
-                            .mbox1{
-                                .conbox1{
-                                    background: rgba(255,255,200,0.1);
-                                    display: none;
-                                    .sc-box{
-                                        a{
-                                            sc-box{
-                                                img{
-
-                                                    width: 100%;
-                                                    height: 100%;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                             
-                          }
-                          .navBtn2 {
-                            position: absolute; right: -198vw;  top: 10px;
-                            display: block; width: 50px; height: 50px;
-                            background: rgba(255,255,255,0.4);
-                            border-radius: 50%;
-                            text-align: center;
-                            line-height: 50px;
-                            text-decoration: none;
-                            color: #000;
-                          }
-                            #logo{
-                                width: 100px;
-                                height: 100px;
-                                position: absolute;
-                                left:30px;
-                                top:-20px;
-                                z-index: 10;
-                            }
-                            #pr
-                            {
-                                width: 70px;
-                                height: 70px;
-                                position: absolute;
-                                left:30px;
-                                top:600px;
-                            }
-                            #in
-                            {
-                                width: 70px;
-                                height: 70px;
-                                position: absolute;
-                                right:30px;
-                                top:550px;
-                            }
-                            #em
-                            {
-                                width: 70px;
-                                height: 70px;
-                                position: absolute;
-                                right:30px;
-                                top:630px;
-                            }
-                        width: 100%;
-                        height: 100%; 
-                        background: url(../img/main_pf1.jpg)center center;
-                    }
-                    .bg3{
-                        position: relative;
-                        .side-nav3 {
-                            position: fixed; left: -99.5vw; top: 0;
-                            width: 99.5vw; height: 100vh;
-                            background:#fff;
-                            transition: all 0.3s;
-                            z-index: 1;
-                            .mbox1{
-                                .conbox1{
-                                    background: rgba(255,255,200,0.1);
-                                    display: none;
-                                    .sc-box{
-                                        a{
-                                            sc-box{
-                                                img{
-
-                                                    width: 100%;
-                                                    height: 100%;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                             
-                          }
-                          .navBtn3 {
-                            position: absolute; right: -298vw; top: 10px;
-                            display: block; width: 50px; height: 50px;
-                            background: rgba(255,255,255,0.4);
-                            border-radius: 50%;
-                            text-align: center;
-                            line-height: 50px;
-                            text-decoration: none;
-                            color: #000;
-                          }
-                            #logo{
-                                width: 100px;
-                                height: 100px;
-                                position: absolute;
-                                left:30px;
-                                top:-20px;
-                                z-index: 10;
-                            }
-                            #pr
-                            {
-                                width: 70px;
-                                height: 70px;
-                                position: absolute;
-                                left:30px;
-                                top:600px;
-                            }
-                            #in
-                            {
-                                width: 70px;
-                                height: 70px;
-                                position: absolute;
-                                right:30px;
-                                top:550px;
-                            }
-                            #em
-                            {
-                                width: 70px;
-                                height: 70px;
-                                position: absolute;
-                                right:30px;
-                                top:630px;
-                                
-                            }
-                        width: 100%;
-                        height: 100%;   
-                        background: url(../img/main_pf2.jpg)center center;
-                    }
-                    .bg4{
-                        position: relative;
-                        .side-nav4 {
-                            position: fixed; left: -99.5vw; top: 0;
-                            width: 99.5vw; height: 100vh;
-                            background:#fff;
-                            transition: all 0.3s;
-                            z-index: 1;
-                            .mbox1{
-                                .conbox1{
-                                    background: rgba(255,255,200,0.1);
-                                    display: none;
-                                    .sc-box{
-                                        a{
-                                            sc-box{
-                                                img{
-
-                                                    width: 100%;
-                                                    height: 100%;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                             
-                          }
-                          .navBtn4 {
-                            position: absolute; right: -398vw; top: 10px;
-                            display: block; width: 50px; height: 50px;
-                            background: rgba(255,255,255,0.4);
-                            border-radius: 50%;
-                            text-align: center;
-                            line-height: 50px;
-                            text-decoration: none;
-                            color: #fff;
-                          }
-                            #logo{
-                                width: 100px;
-                                height: 100px;
-                                position: absolute;
-                                left:30px;
-                                top:-20px;
-                                z-index: 10;
-                            }
-                            #pr
-                            {
-                                width: 70px;
-                                height: 70px;
-                                position: absolute;
-                                left:30px;
-                                top:600px;
-                            }
-                            #in
-                            {
-                                width: 70px;
-                                height: 70px;
-                                position: absolute;
-                                right:30px;
-                                top:550px;
-                            }
-                            #em
-                            {
-                                width: 70px;
-                                height: 70px;
-                                position: absolute;
-                                right:30px;
-                                top:630px;
-                            }
-                        width: 100%;
-                        height: 100%;
-                        background: url(../img/main_pf3.jpg)center center;
-                    }
+            height: 90px;
+            .nav1{
+                display: inline;
+                float: left;
+                a{
+                    margin-left: 20px;
+                    color:#888;
+                    font-size: .8667em;
                 }
             }
+            .nav2{
+                display: inline;
+                float: right;
+                a{
+                    margin-left: 20px;
+                    color:#888;
+                    font-size: .8667em;
+                }
+            }
+            .nav3{
+                display: inline;
+                .nav3-1{
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                .nav3-2{
+                    width: 10%;
+                    height: 30px;
+                }
+                .nav3-3{
+                    width: 10%;
+                    height: 30px;
+                }
+            }
+            .nav4{
+                display: inline;
+                .nav4-1{}
+                .nav4-2{}
+                .nav4-3{}
+            }
+            .navimg1{
+                display: inline;
+                display: flex;
+                justify-content: center;
+                img{
+                    margin-top: 20px;
+                    width: 140px;
+                    height: 47px;
+                }
+            }
+            .navimg2{
+                display: inline;
+                img{
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+            .navimg3{
+                display: inline;
+                img{
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+
+
+
         }
-    }
+   }
 }

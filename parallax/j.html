@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+
+</head>
+<body>
+    <div class="selector" id="selector">
+        <div class="box">jQuery vs JavaScript</div>
+        <div class="box">jQuery vs JavaScript</div>
+        <div class="box add">jQuery vs JavaScript</div>
+        <div class="box">jQuery vs JavaScript</div>
+        <div class="box">jQuery vs JavaScript</div> 
+    </div>
+    <br><br><br><br><br>
+    <div>
+        <button class="btn1">click</button>
+
+        <ul id="list">
+            <li>list01</li>
+            <li>list02</li>
+            <li>list03</li>
+            <li>list04</li>
+            <li>list05</li>
+            <li>list06</li>
+            <li>list07</li>
+            <li>list08</li>
+            <li>list09</li>
+            <li>list010</li>
+        </ul>
+    </div>
+<script src="js/jquery.min_1.12.4.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script>
+    //제이쿼리를 이용해서 색을 빨간색으로 변경
+    // $("#selector .box").css("color","red");
+     //자바를 이용해서 색을 빨간색으로 변경
+    //document.querySelector("#selector").style.color = "red";
+
+    //다중선택자 비교
+    // $("#list li").css("color","red");
+    // let list = document.getElementById("list")    //id선택자
+    // let listLi = list.getElementsByTagName("li"); //자식 li를 선택
+    // for(let i=0;i<listLi.length;i++){             //li 갯수만큼 실행
+    //     let li = listLi[i];                       //배열에 저장
+    //     li.style.color ="red";                    //스타일 속성 지정
+    // }
+
+    //다중선택
+    // $(".box").css("color","red")        
+    //document.querySelector(".box").style.color = "red";     //다중선택(x)
+    //document.querySelectorAll(".box").style.color = "red";  //다중선택(x)
+    // let box = document.querySelectorAll(".box");
+    // for(let i=0;i<=box.length;i++){
+    //     box[i].style.color = "red"
+    // }
+    // document.querySelectorAll(".box").forEach(box =>{box.style.color="red"})
+
+    //태그 선택자
+    // $("div").css("color","blue");
+    // document.getElementsByTagName("div").style.color = "blue"
+    //선택
+    // const selector = $("#selector .box")
+    //  selector.css("color","blue")
+    // const selector = $("#selector");
+    // const box = selector.find("box");
+    //  selector.css("color","blue")
+    // const selector = document.getElementById("selector");
+    // const box = selector.querySelector(".box");
+    // box.style.color = "blue"
+
+    // const boxAll = selector.querySelectorAll(".box");
+    // boxAll.forEach(box =>{box.style.color = "blue"})
+    // $(".box").hide();
+    //document.querySelectorAll(".box").forEach(box => {box.style.display = "none"})
+    //$(".bpx").show();
+    //ocument.querySelectorAll(".box").forEach(box => {box.style.display = "block"})
+    //클래스 추가하기
+    //$(".box").addClass("add");
+    // document.querySelectorAll(".box").forEach(box => {box.classList.add("add")})
+    //$(".box").removeClass("box");
+    // document.querySelectorAll("box").forEach(box => {box.classList.remove("box")});
+    //버튼을 클릭하면 글씨를 빨간색으로 변경
+    // $(".btn1").click(function(){
+    //     $(".box").css("color","red")
+    // })
+    // $(".btn1").on("click","a",function(){
+    //     $(".box").css("color","red")
+    // });
+    // document.querySelector(".btn1").addEventListener("click",function(){
+    //     document.querySelectorAll(".box").forEach(box => {
+    //         box.style.color = "red";
+    //     });
+    // });
+    //$("box").toggleClass("add");
+    // document.querySelector(".btn1").addEventListener("click",function(){
+    //     document.querySelectorAll(".box").forEach(box => {box.classList.toggle("toggle");
+    //     });
+    // });
+    // $(".box").on("mouseenter",function (){
+    //     $(".box").css("color","red");
+    // })
+    // document.querySelector(".box").addEventListener("mouseenter",function (){
+    //     document.querySelectorAll(".box").forEach(box => {box.style.color = "red";
+    //     });
+    // });
+    // document.querySelector(".box").addEventListener("mouseleave",function (){
+    //     document.querySelectorAll(".box").forEach(box => {box.style.color = "black";
+    //     });
+    // });
+    // if($(".box").hesClass("add")){
+    //     $(".add").css("color","blue");
+    // }
+
+    // if(document.qetE("#selector").classList.contains("add")) {
+    //     document.querySelector("box").style.color = "blue";
+    //     }    
+
+    //  $(".btn1").click(function(){
+    //     $(".selector").append("<div class='box'>jQuery vs JavaScript</div>")
+    //     $(".selecftor").prepend("<div class='box'>jQuery vs JavaScript</div>")
+    //      $(".selecfor").append($("selector > div:list-child").clone())
+    //      $(".selecfor").append($("selector > div:list-child").clone())
+    //  });  
+    //appendChild
+    document.querySelector(".btn1").addEventListener("click",function(){
+        let elem = document.qetElementById("selector");
+        let doc = document.createElement("div");
+        elem.appendChild(doc)
+    }) 
+</script>        
+</body>
+</html>

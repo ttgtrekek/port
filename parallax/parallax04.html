@@ -273,15 +273,17 @@
         
             document.querySelector(".pageYOffset").textContent = pageYOffset;
             //$(".scrollTop").text(scrollTop);            
-            document.querySelector(".s1OT").textContent = document.getElementById("section1").offsetTop;
-            document.querySelector(".s2OT").textContent = document.getElementById("section2").offsetTop;
-            document.querySelector(".s3OT").textContent = document.getElementById("section3").offsetTop;
-            document.querySelector(".s4OT").textContent = document.getElementById("section4").offsetTop;
-            document.querySelector(".s5OT").textContent = document.getElementById("section5").offsetTop;
-            document.querySelector(".s6OT").textContent = document.getElementById("section6").offsetTop;
-            document.querySelector(".s7OT").textContent = document.getElementById("section7").offsetTop;
-            document.querySelector(".s8OT").textContent = document.getElementById("section8").offsetTop;
-            document.querySelector(".s9OT").textContent = document.getElementById("section9").offsetTop;
+            // document.querySelector(".s1OT").textContent = document.getElementById("section1").offsetTop;
+            // document.querySelector(".s2OT").textContent = document.getElementById("section2").offsetTop;
+            // document.querySelector(".s3OT").textContent = document.getElementById("section3").offsetTop;
+            // document.querySelector(".s4OT").textContent = document.getElementById("section4").offsetTop;
+            // document.querySelector(".s5OT").textContent = document.getElementById("section5").offsetTop;
+            // document.querySelector(".s6OT").textContent = document.getElementById("section6").offsetTop;
+            // document.querySelector(".s7OT").textContent = document.getElementById("section7").offsetTop;
+            // document.querySelector(".s8OT").textContent = document.getElementById("section8").offsetTop;
+            // document.querySelector(".s9OT").textContent = document.getElementById("section9").offsetTop;
+
+            
 
 
             // if (pageYOffset > document.getElementById("section1").offsetTop) {
@@ -329,6 +331,16 @@
             // } else {
             //     document.querySelector(".s9OT").style.color = "black"; 
             // }
+
+            for(let i=1; i<=9; i++){
+                document.querySelector(".s"+i+"OT").textContent = document.getElementById("section"+i).offsetTop;
+
+                if (pageYOffset > document.getElementById("section"+i).offsetTop) {
+                    document.querySelector(".s"+i+"OT").style.color = "red";
+                } else {
+                    document.querySelector(".s"+i+"OT").style.color = "black"; 
+                }
+            }
 
             // if(pageYOffset > document.getElementById("section1").offset){
             //     document.getElementById("section1").classList.add("show");

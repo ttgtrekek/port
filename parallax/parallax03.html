@@ -246,22 +246,22 @@
             </section>
         </div>
     </section>
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min_1.12.4.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script>
         $(window).scroll(function(){
             const scrollTop = $(window).scrollTop() + $(window).height()/2
             console.log(scrollTop)
             $(".scrollTop").text(scrollTop);
-            $(".s1OT").text( parseInt($("#section1").offset().top) );
-            $(".s2OT").text( parseInt($("#section2").offset().top) );
-            $(".s3OT").text( parseInt($("#section3").offset().top) );
-            $(".s4OT").text( parseInt($("#section4").offset().top) );
-            $(".s5OT").text( parseInt($("#section5").offset().top) );
-            $(".s6OT").text( parseInt($("#section6").offset().top) );
-            $(".s7OT").text( parseInt($("#section7").offset().top) );
-            $(".s8OT").text( parseInt($("#section8").offset().top) );
-            $(".s9OT").text( parseInt($("#section9").offset().top) );
+            $(i).text( parseInt($("#section1").offset().top) );
+            $(i).text( parseInt($("#section2").offset().top) );
+            $(i).text( parseInt($("#section3").offset().top) );
+            $(i).text( parseInt($("#section4").offset().top) );
+            $(i).text( parseInt($("#section5").offset().top) );
+            $(i).text( parseInt($("#section6").offset().top) );
+            $(i).text( parseInt($("#section7").offset().top) );
+            $(i).text( parseInt($("#section8").offset().top) );
+            $(i).text( parseInt($("#section9").offset().top) );
 
             if( scrollTop > parseInt($("#section1").offset().top) ){
                 $(".s1OT").css("color","red");
@@ -292,6 +292,14 @@
             } else ( $(".s9OT").css("color","black"))
         });
 
+
+        for(i = 1;i<=9;i++){
+                $(".s"+i+"OT").text(parseInt($("#section"+i).offset().top));
+                if ( scrollTop > parseInt($("#section"+i).offset().top)){
+                $(".s"+i+"OT").css("color","red");
+            } else { $(".s"+i+"OT").css("color","black")
+            }
+        }
         //노가다
         /*if( scrollTop > parseInt( $("#section1").offset().top )){
                 $("#section1").addClass("show");
