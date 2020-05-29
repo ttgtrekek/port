@@ -418,5 +418,24 @@
 			</div>
 		</section>
 	</div>
+	<script src="assets/js/jquery.min_1.12.4.js"></script>
+	<script>
+		$(".nav3 .gnb1").on('mouseenter', function(){
+			$(this).addClass("on")
+			$(".gnb-depth1").css("display","block")
+		});
+		// $(".nav3 .gnb1").on('mouseleave', function(){
+		// 	$(this).removeClass("on")
+		// 	$(".gnb-depth1").css("display","none")
+		// });
+	tabBtn.click(function(){
+		let target = $(this);           //버튼의 타겟을 변수에 저장
+		let index = target.index();     //버튼의 순서를 변수에 저장
+		tabBtn.removeClass("active");   //버튼의 클래스를 삭제
+		target.addClass("active");      //타겟 버튼의 클래스를 추가
+		tabCont.css("display","none");
+		tabCont.eq(index).css("display","block");
+		});
+	</script>
 </body>
 </html>

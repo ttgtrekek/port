@@ -85,7 +85,7 @@
                         top: 91px; left: 0;
                         width: 100%;
                         height: 44px;
-                        background: #555;
+                        background: #000;
                         ul {
                             position: fixed;
                             top: 100px; left: 265px;
@@ -111,7 +111,7 @@
                         top: 91px; left: 0;
                         width: 100%;
                         height: 44px;
-                        background: #555;
+                        background: #000;
                         ul {
                             position: fixed;
                             top: 100px; left: 380px;
@@ -137,7 +137,7 @@
                         top: 91px; left: 0;
                         width: 100%;
                         height: 44px;
-                        background: #555;
+                        background: #000;
                         ul {
                             position: fixed;
                             top: 100px; left: 615px;
@@ -204,7 +204,7 @@
                         top: 91px; left: 0;
                         width: 100%;
                         height: 44px;
-                        background: #555;
+                        background: #000;
                         ul {
                             position: fixed;
                             top: 100px; right: 325px;
@@ -230,258 +230,7 @@
                         top: 91px; left: 0;
                         width: 100%;
                         height: 44px;
-                        background: #555;
-                        ul {
-                            position: fixed;
-                            top: 100px; right: 185px;
-                            text-align: center;
-                            li{
-                                display: inline;
-                                margin-left: 12px;
-                                line-height: 20px;
-                                a {
-                                    text-decoration: none;
-                                    color: #fff;
-                                    font-size: 14px;
-                                    &:hover {
-                                        border-bottom: 1px solid #fff;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .navimg1{
-                    display: inline;
-                    display: flex;
-                    justify-content: center;
-                    img{
-                        margin-top: -5px;
-                        width: 140px;
-                        height: 47px;
-                    }
-                }
-                .navimg2{
-                    display: inline;
-                    position: absolute;
-                    left: 2px;
-                    top: 55px;
-                    img{
-                        width: 23px;
-                        height: 19px;
-                        margin-left: 12px;
-                    }
-                }
-            }nav{
-                overflow: hidden;
-                background-color: #000;
-                width: 100%;
-                height: 90px;
-                position: relative;
-                .nav1{
-                    display: inline-block;
-                    margin-top: 15px;
-                    a{
-                        margin-right: 18px;
-                        color:#888;
-                        font-size: 13px;
-                        &:hover{
-                            border-bottom: 1px solid #888;
-                        }
-                    }
-                }
-                .nav2{
-                    display: inline-block;
-                    position: absolute;
-                    top: 15px;
-                    right: 0;
-                    a{
-                        margin-left: 18px;
-                        color:#888;
-                        font-size: 13px;
-                        &:hover{
-                            border-bottom: 1px solid #888;
-                        }
-                    }
-                }
-                .nav3{
-                    display: inline;
-                    position: absolute;
-                    left: 170px;
-                    top: 55px;
- 
-                    .nav3-1{
-                        margin-right: 50px;
-                        img{
-                            width: 32px;
-                            height: 19px;
-                        }
-                    }
-                    .nav3-2{
-                        margin-right: 50px;
-                        img{
-                            width: 32px;
-                            height: 19px;
-                        }
-                    }
-                    .nav3-3{
-                        img{
-                            width: 32px;
-                            height: 19px;
-                        }
-                    }
-                    .gnb-depth1{
-                        position: fixed;
-                        display: none;
-                        top: 91px; left: 0;
-                        width: 100%;
-                        height: 44px;
-                        background: #555;
-                        ul {
-                            position: fixed;
-                            top: 100px; left: 265px;
-                            text-align: center;
-                            li{
-                                display: inline;
-                                margin-left: 12px;
-                                line-height: 20px;
-                                a {
-                                    text-decoration: none;
-                                    color: #fff;
-                                    font-size: 14px;
-                                    &:hover {
-                                        border-bottom: 1px solid #fff;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .gnb-depth2{
-                        position: fixed;
-                        display: none;
-                        top: 91px; left: 0;
-                        width: 100%;
-                        height: 44px;
-                        background: #555;
-                        ul {
-                            position: fixed;
-                            top: 100px; left: 380px;
-                            text-align: center;
-                            li{
-                                display: inline;
-                                margin-left: 12px;
-                                line-height: 20px;
-                                a {
-                                    text-decoration: none;
-                                    color: #fff;
-                                    font-size: 14px;
-                                    &:hover {
-                                        border-bottom: 1px solid #fff;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .gnb-depth3{
-                        position: fixed;
-                        display: none;
-                        top: 91px; left: 0;
-                        width: 100%;
-                        height: 44px;
-                        background: #555;
-                        ul {
-                            position: fixed;
-                            top: 100px; left: 615px;
-                            text-align: center;
-                            li{
-                                display: inline;
-                                margin-left: 12px;
-                                line-height: 20px;
-                                a {
-                                    text-decoration: none;
-                                    color: #fff;
-                                    font-size: 14px;
-                                    &:hover {
-                                        border-bottom: 1px solid #fff;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .nav4{
-                    display: inline;
-                    position: absolute;
-                    right: 10px;
-                    top: 55px;
-                    .nav4-1{
-                        img{
-                            width: 48px;
-                            height: 19px;
-                        }
-                    }
-                    .nav4-2{
-                        margin-left: 50px;
-                        img{
-                            width: 48px;
-                            height: 19px;
-                        }
-                    }
-                    .nav4-3{
-                        margin-left: 50px;
-                        img{
-                            width: 32px;
-                            height: 19px;
-                        }
-                    }
-                    .nav4-4{
-                        margin-left: 70px;
-                        img{
-                            width: 36px;
-                            height: 36px;
-                            margin-top: -8px;
-                        }
-                    }
-                    .nav4-5{
-                        margin-left: 8px;
-                        img{
-                            width: 22px;
-                            height: 22px;
-                        }
-                    }
-                    .gnb-depth4{
-                        position: fixed;
-                        display: none;
-                        top: 91px; left: 0;
-                        width: 100%;
-                        height: 44px;
-                        background: #555;
-                        ul {
-                            position: fixed;
-                            top: 100px; right: 325px;
-                            text-align: center;
-                            li{
-                                display: inline;
-                                margin-left: 12px;
-                                line-height: 20px;
-                                a {
-                                    text-decoration: none;
-                                    color: #fff;
-                                    font-size: 14px;
-                                    &:hover {
-                                        border-bottom: 1px solid #fff;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .gnb-depth5{
-                        position: fixed;
-                        display: none;
-                        top: 91px; left: 0;
-                        width: 100%;
-                        height: 44px;
-                        background: #555;
+                        background: #000;
                         ul {
                             position: fixed;
                             top: 100px; right: 185px;
@@ -1369,4 +1118,8 @@
             margin: 0 auto;
         }
     }
+}
+.on {                
+    border-bottom: 2px solid #fff;
+    padding-bottom: 15px;
 }
