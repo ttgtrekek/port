@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="con">
+            <nav>
+                <img src="aset/logo.png" alt="logo">
+                <ul>
+                    <li>
+                        <a href="#">즐길거리</a>
+                        <div class="subMenu">
+                            <ul>
+                                <li><a href="#">진행중 이벤트 </a></li>
+                                <li><a href="#"> 지난 이벤트</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                   <li>
+                       <a href="#">요금/우대혜택</a>
+                        <div class="subMenu">
+                            <ul>
+                                <li><a href="#">요금/우대혜택 </a></li>
+                                <li><a href="#"> 요금/우대혜택</a></li>
+                            </ul>
+                        </div>
+                   </li>
+                   <li>
+                       <a href="#">참여프로그램</a>
+                        <div class="subMenu">
+                            <ul>
+                                <li><a href="#">참여프로그램 </a></li>
+                                <li><a href="#"> 참여프로그램</a></li>
+                            </ul>
+                        </div>
+                   </li>
+                    <li>
+                        <a href="#">이용가이드</a>
+                        <div class="subMenu">
+                            <ul>
+                                <li><a href="#">이용가이드 </a></li>
+                                <li><a href="#"> 이용가이드</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">소통서비스</a>
+                        <div class="subMenu">
+                            <ul>
+                                <li><a href="#">소통서비스 </a></li>
+                                <li><a href="#"> 소통서비스</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <header>
+                    <div class="slider-img">
+                        <div class="sliders s1"><img src="aset/bea.png" alt="이미지1"></div>
+                        <div class="sliders s2"><img src="aset/bea.png" alt="이미지2"></div>
+                        <div class="sliders s3"><img src="aset/bea.png" alt="이미지3"></div>
+                    </div>
+            </header>
+            <div class="contents1">
+                <article class="cbox1">
+                    <div class="cbox1-1"> 
+                        <ul class="ul1">
+                            <a href="#" class="btn1">롯데월드 소식 |</a><a href="#" class="btn2">뉴스.공지</a>
+                            <li>그럴싸진관 미라클</li> 
+                            <li>드림스테이지 '힘내 소중한 너'</li>
+                            <li>'힘내 소중한 너'음원 발매</li>
+                            <li>이용 요금 조정 안내</li>
+                        </ul>
+                        <ol class="olbox">
+                            <a href="#" class="btn1">롯데월드 소식 |</a><a href="#" class="btn2">뉴스.공지</a>
+                            <li>공지</li> 
+                            <li>공지</li>
+                            <li>공지</li>
+                            <li>공지</li>
+                        </ol>
+                        <div class="cbox1-2">
+                            <div>더보기<img src="aset/moa.png" alt=""></div>
+                            <p>2018.11.19</p>
+                            <p>2018.11.19</p>
+                            <p>2018.11.19</p>
+                            <p>2018.11.19</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="cbox2">
+                    <a href="#"><img src="aset/contents1.png" alt=""></a>
+                    <div class="cboxpop">
+                        <ul>
+                           <span>타이틀</span>
+                            <p>연간회원안내연간회원안내연간회원안내연간회원안내연간회원안내연간회원안내연간회원안내</p>
+                            <a href="#" class="btn3">닫기</a>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            <section class="contents2">
+                <span>특별한 경험</span>
+                <ul>
+                    <li><img src="aset/contents2.png" alt=""><p>연간회원안내</p></li>
+                    <li><img src="aset/contents3.png" alt=""><p>프리미엄투어</p></li>
+                    <li><img src="aset/contents4.png" alt=""><p>공연참여 프로그램</p></li>
+                    <li><img src="aset/contents5.png" alt=""><p>단체프로그램</p></li>
+                </ul>
+            </section>
+            <footer>
+                <p>서울특별시 송파구 올림픽로 240 호텔롯데 롯데월드 | 대표자: 박동기</p>
+                <p>사업자등록:219-85-00014 | 통신판매업신고번호:송파 제5513호 | 전화:1661-2000</p>
+                <span>COPYRIGHT2018LOTTEWORLD ALL RIGHTS RESERVED</span>   
+            </footer>
+        </div>
+    </div>
+    <script src="../assets/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $("nav > ul > li").mouseover(function(){
+				$(this).find(".subMenu").stop().show();
+		});
+		$("nav > ul >li").mouseout(function(){
+				$(this).find(".subMenu").stop().hide();
+		});
+        $(".contents1 .cbox2 a").click(function(){
+            $(".cboxpop").css('display','block');
+        })
+        $(".contents1 .cbox2 .cboxpop ul .btn3").click(function(){
+            $(".cboxpop").css('display','none');
+        })
+        const sliderImg = $(".slider-img");
+        const sliders = $(".sliders");
+
+        setInterval(function(){
+            sliderImg.animate({left: "-1200px"}, 400, function(){
+                $(".sliders:first-child").appendTo(sliderImg);
+                sliderImg.css("left","")
+            })
+        }, 3000);
+        $(".cbox1 .cbox1-1 .btn2").click(function(){
+            $(".cbox1-2").removeClass("add").addClass("add");
+            $(".cbox1 .cbox1-1 .olbox").removeClass("add").addClass("add");
+            $(".cbox1 .cbox1-1 ul").removeClass("add").addClass("add");
+        })
+        $(".cbox1 .cbox1-1 .btn1").click(function(){
+            $(".cbox1-2").removeClass("add");
+            $(".cbox1 .cbox1-1 .olbox").removeClass("add");
+            $(".cbox1 .cbox1-1 ul").removeClass("add");
+        })
+    </script>
+</body>
+</html>

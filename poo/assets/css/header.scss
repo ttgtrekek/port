@@ -1,13 +1,16 @@
 body{
     @font-face { font-family: 'NanumBarunGothic'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot'); src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype'); } @font-face { font-family: 'NanumBarunGothic'; font-style: normal; font-weight: 700; src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot'); src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype') } @font-face { font-family: 'NanumBarunGothic'; font-style: normal; font-weight: 300; src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot'); src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype'); } .nanumbarungothic * { font-family: 'NanumBarunGothic', sans-serif; }
+    background-image: url(../img/B467A2-FAA5-4CE5-BF83-EC1C2E9EE473.large.jpg);
+    background-size: 2500px;
+     background-position:-350px 0px;
     #wrap{
-        background-image: url(assets/img/B467A2-FAA5-4CE5-BF83-EC1C2E9EE473.large.jpg);
         background-color: #fff;
         width: 100%;
         height: 4075px;
-        background: #000;
+        background-color: rgba(0,0,0,0.8);
         .container2{
             width: 100%;
+            
             header {
                 width: 100%;
                 height: 20px;
@@ -20,6 +23,7 @@ body{
                         display:flex;
                         justify-content: center;
                         align-items: center;
+                        
                         li:nth-child(1){
                             margin-left: 0px;
                         }
@@ -52,11 +56,12 @@ body{
                     position: absolute;
                 }
             }
+            
            .container1{
                 width: 1100px;
                 height: 50px;
                 margin: 0 auto;
-                background-color: #000;
+                color: rgba(0,0,0,0.8);
                 @import url('https://fonts.googleapis.com/css?family=Abel');
 
                 * {padding: 0; margin: 0;}
@@ -81,6 +86,7 @@ body{
                 
                 nav {
                     position: relative;
+                    
                     ul { 
                         display: inline-block;
                         .logo{
@@ -143,7 +149,10 @@ body{
                                 color: #000;
                                 background: rgba(0,0,0,0.4);
                                 width: 100%;
-                            }
+                                li{
+                                    margin: 0;
+                                }                       
+                             }  
                         }
                         li:nth-child(3){
                             margin-left: 80px;
@@ -1127,9 +1136,8 @@ body{
                     position: absolute;
                     top: 10px;
                      left: 160px;
-                    img{
-                        width: 150px;
-                        height: 50px;
+                    p{
+
                     }
                 }
                 .fbox3{

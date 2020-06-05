@@ -110,7 +110,7 @@
             width: var(--width);
             padding-bottom: calc(var(--width)/(var(--aspect-ratio)));
             overflow: hidden;
-            background: #ccc;
+           
         }
 
         .content-item-img {
@@ -327,23 +327,63 @@
     <script src="js/jquery.min_1.12.4.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/gsap.min.js"></script>
+    <script src="Slider/js/gsap.min.js"></script>
 
     <script>
-         //제이쿼리
-         let scrollTop = $(window).scrollTop();
+        //  //제이쿼리
+        //  let scrollTop = $(window).scrollTop();
 
-         function scroll(){
-             let newScrollTop =$(window).scrollTop();
-             let different = newScrollTop - scrollTop;
-             console.log("scrollTop:"+scrollTop);
-             console.log("newScrollTop:"+newScrollTop);
-             console.log("different:"+different);
-             $(".content-item-desc").css({"transform":"skewY("+different+"deg)"});
-             scrollTop = newScrollTop;
-             requestAnimationFrame(scroll);
-         }
-         scroll()
+        //  function scroll(){
+        //      let newScrollTop =$(window).scrollTop();
+        //      let different = newScrollTop - scrollTop;
+        //      console.log("scrollTop:"+scrollTop);
+        //      console.log("newScrollTop:"+newScrollTop);
+        //      console.log("different:"+different);
+        //      $(".content-item-desc").css({"transform":"skewY("+different+"deg)"});
+        //      scrollTop = newScrollTop;
+        //      requestAnimationFrame(scroll);
+        //  }
+        //  scroll()
          //일정한 시간 동안 반복적 함수 실행
+
+
+        //javascript
+        let pageYOffset = window.pageYOffset;
+
+        const scroll = () =>{
+           const newPageYOffset = window.pageYOffset;
+           const different = newPageYOffset - pageYOffset;
+        //console.log("pageYOffset:"+pageYOffset);
+        //console.log("newPageYOffset:"+newPageYOffset);
+        //console.log("different:"+different);
+        let target = document.querySelectorAll(".content-item-img")
+
+        // target.style.transform = "rotate("+different+"deg)";
+
+        // target.forEach(box => {
+        //     box.style.transform = "rotate("+different*0.03+"deg)";
+        // })
+
+        //gsap
+        // gsap.to(".content-item-img", { duration: 0.3, ease: Power1.ease, rotation: different });
+        gsap.to(".content-item-img", { duration: 0.3, ease: Power1.ease, skewY: different * 0.2});
+        gsap.to(".content-item-desc", { duration: 0.3, ease: Power2.ease, skewY: -different * 0.1 });
+
+            pageYOffset = newPageYOffset;
+           requestAnimationFrame(scroll);
+           
+        }    
+        scroll()
+
+
+
+
+
+
+
+
+
+
 
         
         let num = 0;
